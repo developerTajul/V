@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'tajul';
+	src: url(../fonts/Balqis.woff) format('woff');
+}
+
+body {
+	font-family: 'tajul';
+}
