@@ -1,8 +1,206 @@
-@font-face {
-	font-family: 'tajul';
-	src: url(../fonts/Balqis.woff) format('woff');
+body {
+	margin: 0;
+	font-family: 'Segoe UI';
 }
 
-body {
-	font-family: 'tajul';
+.container {
+	width: 60%;
+	margin: auto;
+}
+.header-area{
+	background: #23232E;
+	color: #fff;
+	text-align: center;
+	padding: 80px 0 50px;
+}
+.header-area .logo-area{
+	margin-bottom: 100px;
+}
+.header-area .logo-area img{
+	width: 80px;
+	height: auto;
+}
+.header-area .slogan-txt{
+	margin: 0 0 100px;
+}
+.header-area .slogan-txt h2 {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 80px;
+	margin: 0 0 30px;
+	line-height: 1;
+}
+.header-area .slogan-txt p{}
+.header-area .link-area{
+
+}
+.header-area .link-area a{
+	color: #fff;
+}
+.header-area .link-area a i{
+	font-size: 15px;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #fff;
+	padding: 10px;
+	border-radius: 50%;
+	transition: .3s;
+}
+.header-area .link-area a:hover i{
+	border: 1px solid green;
+	color: green;
+}
+
+
+/** service area **/
+.services-area {
+	padding: 120px 0 90px;
+	overflow: hidden;
+}
+.services-area .service-details{
+	padding: 0 0 40px;
+}
+.services-area .service-details p{
+	text-align: center;
+	color: #464b4f;
+	font-size: 30px;
+	font-weight: 400;
+	margin: 0 0 40px;
+	
+}
+.services-area h2.service-title{
+	color: #464b4f;
+	font-weight: bold;
+	font-size: 80px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0;
+}
+.services-items{
+	float: left;
+}
+.services-items .single-service-item {
+	float: left;
+	width: 32%;
+	margin-right: 2%;
+}
+.services-items .single-service-item:last-child{
+	margin-right: 0;
+}
+.services-items .single-service-item h4{
+	font-size: 18px;
+	font-weight: bold;
+	color: #464b4f;
+	text-transform: uppercase;
+}
+.services-items .single-service-item p{
+	font-size: 18px;
+	font-weight: 400;
+	color: #888a8b;
+}
+
+/** portfolios-area **/
+
+
+.portfolios-area{
+	background: #23232D;
+	padding: 90px 0 60px;
+	overflow: hidden;
+}
+.portfolios-area .section-title{}
+.portfolios-area .section-title h2 {
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 60px;
+	line-height: 0;
+}
+.section-menu {
+	margin-bottom: 30px;
+}
+.section-menu ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+.section-menu ul li{
+	display: inline;
+}
+.section-menu ul li a {
+	color: #fff;
+	text-transform: capitalize;
+	text-decoration: none;
+	margin: 10px 25px;
+	display: inline-block;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 5px;
+}
+.section-menu ul li a:hover{
+	border-bottom: 1px solid #fff;
+}
+.portfolios-area .portfolio-items {
+	overflow: hidden;
+	display: block;
+}
+.portfolios-area .single-portfolio-item {
+	width: 32%;
+	margin-right: 2%;
+	float: left;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.portfolios-area .single-portfolio-item:nth-child(3n){
+	margin-right: 0;
+}
+.portfolios-area .single-portfolio-item .portfolio-thumb{}
+.portfolios-area .single-portfolio-item .portfolio-thumb img{
+	max-width: 100%;
+}
+.portfolios-area .single-portfolio-item .portfolio-text{
+	color: #fff;
+}
+.portfolios-area .single-portfolio-item .portfolio-text h4 {
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 1;
+	margin: 10px 0 9px;
+}
+.portfolios-area .single-portfolio-item .portfolio-text h5{
+	margin: 0;
+}
+.link-all {
+	text-align: center;
+	display: block;
+	overflow: hidden;
+}
+.link-all a {
+	text-decoration: none;
+	text-transform: capitalize;
+	color: #fff;
+	background: #7C77CB;
+	padding: 15px 25px;
+	border-radius: 5px;
+	display: inline-block;
+}
+
+/** photography **/
+.photography-area{}
+.photography-area .section-title{}
+.photography-area .section-title h2{}
+.photography-area .section-title p{}
+.photography-items {
+	overflow: hidden;
+	clear: both;
+}
+.photography-items .single-photography-item{
+	width: 32%;
+	margin-right: 2%;
+	float: left;
+}
+.photography-items .single-photography-item:nth-child(3n){
+	margin-right: 0;
+}
+.photography-items .single-photography-item img{
+	width: 100%;
 }
