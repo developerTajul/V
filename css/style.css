@@ -185,22 +185,107 @@ body {
 }
 
 /** photography **/
-.photography-area{}
-.photography-area .section-title{}
-.photography-area .section-title h2{}
-.photography-area .section-title p{}
+.photography-area{
+	padding: 100px 0;
+	overflow: hidden;
+	clear: both;
+}
+.photography-area .section-title{
+	text-align: center;
+
+}
+.photography-area .section-title h2{
+	color: #464b4f;
+	font-size: 60px;
+	text-transform: uppercase;
+	margin: 0 0 40px;
+}
+.photography-area .section-title p {
+	color: #888a8b;
+	font-size: 30px;
+	padding: 0 85px;
+}
 .photography-items {
 	overflow: hidden;
 	clear: both;
+	display: block;
+	margin-bottom: 25px;
 }
 .photography-items .single-photography-item{
 	width: 32%;
 	margin-right: 2%;
 	float: left;
+	margin-bottom: 20px;
 }
 .photography-items .single-photography-item:nth-child(3n){
 	margin-right: 0;
 }
 .photography-items .single-photography-item img{
 	width: 100%;
+}
+
+
+/** subscriber-area **/
+.subscriber-area{
+	background: #23232E;
+	padding: 120px 0;
+}
+.subscriber-area .subscriber{
+	text-align: center;
+	color: #fff;
+}
+.subscriber-area .subscriber a {
+	margin-bottom: 36px;
+	display: inline-block;
+}
+.subscriber-area .subscriber p{
+	font-size: 18px;
+	margin: 0 0 35px;
+}
+.subscriber-area .subscriber form{}
+.subscriber-area .subscriber form input[type="email"] {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	width: 200px;
+	color: #c8c8c8;
+}
+.subscriber-area .subscriber form button[type="submit"]{
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	width: 120px;
+	cursor: pointer;
+	background: #7B78C9;
+	color: #fff;
+}
+
+
+.footer-area{
+	padding: 100px 0 80px;
+}
+.footer-area .social-profiles{}
+.footer-area .social-profiles ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+.footer-area .social-profiles ul li{
+	display: inline;
+}
+.footer-area .social-profiles ul li a{
+	padding: 10px 20px;
+	display: inline-block;
+}
+.footer-area .social-profiles ul li a i{
+	color: #DBDBDB;
+	font-size: 25px;
+}
+.footer-area .social-profiles ul li a:hover{}
+.copy-info{
+	color: #7c7c7c;
+}
+.copy-info p{
+	text-align: center;
 }
