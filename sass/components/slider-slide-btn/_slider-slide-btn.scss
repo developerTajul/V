@@ -1,0 +1,166 @@
+
+.hero-area{
+    .slick-arrow.btn-prev{
+        position: absolute;
+        bottom: 0;
+        left: 50px;
+        z-index: 11;
+        width: 46px;
+        height: 46px;
+        color: #ffffff;
+        background: #131313;
+        @include transition;
+        &:hover{
+            background:#EDBC5A;
+        }
+        @include lg{
+            width: 36px;
+            height: 36px;
+            left: 40px;
+        }
+        @include sm{
+            width: 36px;
+            height: 36px;
+            left: 40px;
+        }
+    }
+    .slick-arrow.btn-next {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 11;
+        width: 46px;
+        height: 46px;
+        color: #ffffff;
+        background: #131313;
+        @include transition;
+        &:hover{
+            background:#EDBC5A;
+        }
+        @include lg{
+            width: 36px;
+            height: 36px;
+        }
+        @include sm{
+            width: 36px;
+            height: 36px;
+
+        }
+    }  
+}
+
+
+.testimonial-area{
+    &.style-1{
+        .slick-arrow.btn-prev{
+            position: absolute;
+            bottom: 110px;
+            left: 66px;
+            z-index: 11;
+            width: 44px;
+            height: 44px;
+            color: #ffffff;
+            background: #171717;
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.20);
+            @include transition;
+            @include xxl{
+                bottom: 109px;
+            }
+            @include xl{
+                bottom: 70px;
+            }
+            @include lg{
+                bottom: 80px;
+            }
+            @include sm{
+                bottom: -32px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .slick-arrow.btn-next {
+            position: absolute;
+            bottom: 110px;
+            left: 10px;
+            z-index: 11;
+            width: 44px;
+            height: 44px;
+            color: #ffffff;
+            background: #171717;
+            border: 1px solid rgba(255, 255, 255, 0.20);
+            border-radius: 5px;
+            @include transition;
+            @include xxl{
+                bottom: 109px;
+            }
+            @include xl{
+                bottom: 70px;
+            }
+            @include lg{
+                bottom: 80px;
+            }
+            @include sm{
+                bottom: -32px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    &.style-2{
+        .slick-arrow.btn-prev{
+            position: absolute;
+            bottom: 110px;
+            left: 66px;
+            z-index: 11;
+            width: 44px;
+            height: 44px;
+            color: #ffffff;
+            background: #171717;
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.20);
+            @include transition;
+            @include xxl{
+                bottom: 105px;
+            }
+            @include xl{
+                bottom: 40px;
+            }
+            @include lg{
+                bottom: 110px;
+            }
+            @include sm{
+                bottom: -15px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .slick-arrow.btn-next {
+            position: absolute;
+            bottom: 110px;
+            left: 10px;
+            z-index: 11;
+            width: 44px;
+            height: 44px;
+            color: #ffffff;
+            background: #171717;
+            border: 1px solid rgba(255, 255, 255, 0.20);
+            border-radius: 5px;
+            @include transition;
+            @include xxl{
+                bottom: 105px;
+            }
+            @include xl{
+                bottom: 40px;
+            }
+            @include lg{
+                bottom: 110px;
+            }
+            @include sm{
+                bottom: -15px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}

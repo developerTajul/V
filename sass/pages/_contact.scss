@@ -1,0 +1,161 @@
+.contact-page {
+  // &-info {
+  //   margin-top: 56px;
+  //   @include sm {
+  //     margin-top: 0;
+  //   }
+  // }
+  // h4 {
+  //   color: #fff;
+  //   font-family: Gilroy-Regular;
+  //   font-size: 40px;
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   line-height: normal;
+  //   letter-spacing: 2px;
+  //   @include md {
+  //     font-size: 21px;
+  //   }
+  //   @include sm {
+  //     font-size: 21px;
+  //   }
+  // }
+  .company-map {
+    span {
+      iframe {
+        @include sm {
+          height: 250px;
+        }
+      }
+    }
+  }
+  .contact-us-area {
+    @include xl {
+      padding-top: 120px;
+    }
+  }
+  .footer-area-quick-menu {
+    @include md {
+      padding-top: 75px;
+    }
+    @include lg {
+      padding-top: 95px;
+    }
+    @include xl {
+      padding-top: 105px;
+    }
+  }
+}
+
+// New add
+.contact-card {
+  border-bottom: 1px solid $white;
+}
+.contact-us-area {
+  &.style-2 {
+    .faq-area-heading {
+      position: relative;
+      z-index: 3;
+    }
+    .image-card {
+      @include sm {
+        margin-bottom: 30px;
+      }
+      @include md {
+        margin-bottom: 60px;
+      }
+    }
+  }
+  &.style-3 {
+    @include lg {
+      padding-top: 0;
+    }
+    .section-title {
+      @include md {
+        margin-bottom: 30px;
+      }
+      .section-title-main {
+        @include rmaxwd(1399) {
+          margin-top: 0;
+        }
+      }
+    }
+    .faq-area-heading {
+      position: relative;
+      z-index: 3;
+    }
+    .image-card {
+      @include sm {
+        margin-bottom: 30px;
+      }
+      @include md {
+        margin-bottom: 60px;
+      }
+      @include lg {
+        margin-bottom: 60px;
+      }
+    }
+    .contact-card-wrapper {
+      @include md {
+        padding-top: 0;
+      }
+    }
+  }
+  .circle-shape {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transform: translate(30%, 40%);
+    @include rmaxwd(1399) {
+      display: none;
+    }
+  }
+  .section-title {
+    @include sm {
+      padding-bottom: 0;
+    }
+    @include md {
+      flex-direction: column;
+      gap: 0;
+      padding-bottom: 0;
+    }
+    @include lg {
+      flex-direction: column;
+      gap: 0;
+      padding-bottom: 30px;
+    }
+    @include xl {
+      flex-direction: column;
+      gap: 0;
+      padding-bottom: 30px;
+    }
+    .section-title-main {
+      @include rmaxwd(1199) {
+        margin-top: 0;
+      }
+    }
+  }
+  .contact-form {
+    .form-heading {
+      margin-bottom: 30px;
+      @include rmaxwd(991) {
+      }
+    }
+  }
+  .contact-card-wrapper {
+    @include rmaxwd(1399) {
+      margin-left: 0;
+    }
+    .contact-card {
+      @include sm {
+        margin-top: 0;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+      }
+      @include md {
+        margin-top: 30px;
+      }
+    }
+  }
+}

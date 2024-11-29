@@ -1,0 +1,254 @@
+.about-area {
+  //   &-wrapper {
+  //     @include xl {
+  //       margin-left: 230px;
+  //     }
+
+  //     @include lg {
+  //       margin-left: 0;
+  //     }
+
+  //     @include md {
+  //       margin-left: 0;
+  //     }
+
+  //     @include sm {
+  //       margin-left: 0;
+  //     }
+  //   }
+
+  //   &-info {
+  //     @include lg {
+  //       margin-bottom: 70px;
+  //     }
+
+  //     @include md {
+  //       margin-bottom: 50px;
+  //     }
+
+  //     @include sm {
+  //       margin-bottom: 30px;
+  //     }
+  //   }
+
+  //   &-text {
+  //     @include xl {
+  //       margin-right: 0;
+  //     }
+
+  //     @include lg {
+  //       margin-right: 22px;
+  //     }
+
+  //     @include md {
+  //       margin-right: 0;
+  //       margin-left: 0;
+  //     }
+
+  //     @include sm {
+  //       margin-right: 0;
+  //       margin-left: 0;
+  //     }
+  //   }
+
+  //   &-main-part {
+  //     background: #1a1717;
+  //     width: 100%;
+  //     height: auto;
+  //     border-radius: 20px;
+
+  //     @include sm {
+  //       padding: 20px 0 20px 0;
+  //     }
+
+  //     .about-card-bg-topographic {
+  //       top: 0;
+  //       right: 0;
+  //       animation: zoomInOut 2s 2s infinite;
+  //     }
+
+  //     @include md {
+  //       padding-bottom: 40px;
+  //     }
+  //   }
+
+  //   &-heading-part {
+  //     & h2 {
+  //       @include md {
+  //         font-size: 38px;
+  //       }
+
+  //       @include sm {
+  //         font-size: 22px;
+  //       }
+  //     }
+
+  //     & a {
+  //       width: 82px;
+  //       height: 82px;
+  //       background: #edbc5a;
+  //       border-radius: 50%;
+  //       line-height: 78px;
+  //       text-align: center;
+
+  //       @include md {
+  //         width: 60px;
+  //         height: 60px;
+  //         line-height: 58px;
+  //       }
+
+  //       @include sm {
+  //         width: 45px;
+  //         height: 45px;
+  //         line-height: 42px;
+  //       }
+  //     }
+
+  //     & span {
+  //       font-family: Gilroy-Light;
+  //     }
+  //   }
+
+  //   &-inner-img {
+  //     @include sm {
+  //       width: 30%;
+  //     }
+  //   }
+
+  //   &-content-wrapper {
+  //     p {
+  //       font-family: Gilroy-Medium;
+  //       font-size: 22px;
+  //       font-style: normal;
+  //       font-weight: 400;
+  //       line-height: 32px;
+
+  //       &.pra-text {
+  //         position: relative;
+  //         padding-left: 40.5px;
+
+  //         @include xl {
+  //           font-size: 21px;
+  //         }
+
+  //         @include lg {
+  //           font-size: 16px;
+  //         }
+
+  //         @include md {
+  //           font-size: 13px;
+  //           padding-left: 15px;
+  //         }
+
+  //         @include sm {
+  //           font-size: 14px;
+  //           padding-left: 15px;
+  //         }
+
+  //         @include rmaxwd(500) {
+  //           padding: 0 0 30px 0;
+  //           font-size: 10px;
+  //         }
+
+  //         &::before {
+  //           width: 5px;
+  //           height: 125px;
+  //           background: $primary-color;
+  //           content: '';
+  //           position: absolute;
+  //           left: 0;
+  //           top: -14px;
+
+  //           @include rmaxwd(500) {
+  //             display: none;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+
+  //   &-side-img {
+  //     @include sm {
+  //       margin-top: 20px;
+  //     }
+
+  //     img {
+  //       @include xl {
+  //         max-width: 90%;
+  //       }
+
+  //       @include lg {
+  //         max-width: 90%;
+  //       }
+
+  //       @include md {
+  //         max-width: 90%;
+  //       }
+  //     }
+
+  //     .side-img-part {
+  //       top: 49px;
+  //       right: -71px;
+
+  //       @include xl {
+  //         top: 35px;
+  //         right: -41px;
+  //         max-width: 60%;
+  //       }
+
+  //       @include lg {
+  //         top: 13px;
+  //         right: -47px;
+  //         max-width: 70%;
+  //       }
+
+  //       @include md {
+  //         top: 8px;
+  //         right: -32px;
+  //         max-width: 70%;
+  //       }
+
+  //       @include sm {
+  //         top: 36px;
+  //         right: 38px;
+  //         max-width: 70%;
+  //       }
+
+  //       @include rmaxwd(500) {
+  //         display: none;
+  //       }
+  //     }
+  //   }
+
+  //   New style
+  @include rmaxwd(991) {
+    padding-bottom: 0;
+  }
+  @include lg {
+    padding-bottom: 10px;
+  }
+  .section-title {
+    @include sm {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+    @include md {
+      flex-direction: column;
+      gap: 0;
+    }
+    @include lg {
+      flex-direction: column;
+      gap: 0;
+    }
+    @include xl {
+      flex-direction: column;
+      gap: 0;
+      padding-bottom: 0;
+    }
+    &-main {
+      @include md {
+        margin-top: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,169 @@
+.service-details-page {
+  .service-details-wcu {
+    &-title {
+      width: 416px;
+      height: 383px;
+      background: $primary-color;
+      padding: 87px 38px 52px 42px;
+      border-radius: 10px;
+      margin-top: -274px;
+      margin-left: 282px;
+      position: relative;
+      @include xl {
+        width: 353px;
+        height: 383px;
+      }
+      @include lg {
+        margin-top: -151px;
+        margin-left: 205px;
+        width: 330px;
+        height: 290px;
+        padding: 47px 38px 52px 42px;
+      }
+      @include sm {
+        margin-top: -218px;
+        margin-left: 269px;
+        width: 250px;
+        height: 260px;
+        padding: 62px 31px 42px 27px;
+      }
+      @include rmaxwd(576) {
+        margin-top: -65px;
+        margin-left: 197px;
+        width: 130px;
+        height: 130px;
+        padding: 10px 10px 10px 10px;
+      }
+      a {
+        span {
+          margin-bottom: 17px;
+          display: block;
+          &::before {
+            color: $black;
+            font-size: 35px;
+            width: 87px;
+            height: 87px;
+            background: $white;
+            text-align: center;
+            line-height: 87px;
+            border-radius: 50%;
+            display: inline-block;
+            transition: all 500ms ease;
+            @include lg {
+              width: 70px;
+              height: 70px;
+              line-height: 70px;
+              font-size: 25px;
+            }
+            @include sm {
+              width: 35px;
+              height: 35px;
+              line-height: 35px;
+              font-size: 15px;
+            }
+          }
+        }
+        &:hover {
+          span {
+            &::before {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+      h3 {
+        color: $black;
+        @include xl {
+          font-size: 30px;
+        }
+        @include lg {
+          font-size: 28px;
+        }
+        @include sm {
+          font-size: 22px;
+        }
+        @include rmaxwd(576) {
+          font-size: 16px;
+        }
+        span {
+          font-family: Gilroy-Regular;
+        }
+      }
+    }
+    .wcu-area-card-info-secondary {
+      .wcu-area-info-card-wrapper {
+        margin-bottom: 60px;
+      }
+    }
+  }
+  .our-work-step {
+    &-card-wrapper {
+      width: 306px;
+      height: 306px;
+      border-radius: 306px;
+      background: #1a1717;
+      box-shadow: 5px 5px 4px 0px #edbc5a;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      @include xl {
+        width: 250px;
+        height: 250px;
+      }
+      @include lg {
+        width: 220px;
+        height: 220px;
+      }
+      @include md {
+        margin-bottom: 30px;
+      }
+      @include sm {
+        margin-bottom: 30px;
+        margin: 20px auto;
+      }
+    }
+    &-card-title {
+      span {
+        font-family: Gilroy-Light;
+        margin-bottom: 12px;
+        display: block;
+        @include lg {
+          margin-bottom: 8px;
+        }
+      }
+      h4 {
+        margin-bottom: 24px;
+        @include lg {
+          margin-bottom: 16px;
+        }
+      }
+      p {
+        font-size: 18px;
+        padding: 0 39px;
+        display: block;
+        @include lg {
+          font-size: 16px;
+          padding: 0 16px;
+        }
+      }
+    }
+  }
+  .wcu-area {
+    .wuc-area-side-img {
+      margin-top: -85px;
+      @include lg {
+        margin-top: 0;
+      }
+      @include md {
+        margin-top: 0;
+      }
+      img {
+        @include rmaxwd(1199) {
+          display: none;
+        }
+      }
+    }
+  }
+}

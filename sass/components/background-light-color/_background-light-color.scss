@@ -1,0 +1,88 @@
+.bg-light-color {
+  &.style-1 {
+    position: absolute;
+    width: 376px;
+    height: 376px;
+    background: rgba(237, 188, 90, 0.7);
+    filter: blur(200px);
+    z-index: 5;
+    left: 25px;
+    top: 25px;
+    animation: zoomInOut 5s 2s infinite;
+    @include sm {
+      right: 0;
+      top: 0px;
+      width: 276px;
+      height: 276px;
+    }
+  }
+  &.style-2 {
+    position: absolute;
+    width: 376px;
+    height: 376px;
+    background: rgba(237, 188, 90, 0.7);
+    filter: blur(250px);
+    z-index: 5;
+    right: 30px;
+    top: 70px;
+    animation: zoomInOut 5s 2s infinite;
+    @include sm {
+      right: 0;
+      top: 0px;
+      width: 276px;
+      height: 276px;
+    }
+  }
+  &.style-3 {
+    position: absolute;
+    width: 376px;
+    height: 376px;
+    background: rgba(237, 188, 90, 0.7);
+    filter: blur(250px);
+    left: 0;
+    top: 315px;
+    animation: zoomInOut 5s 2s infinite;
+    @include sm {
+      width: 276px;
+      height: 276px;
+    }
+  }
+  &.style-4 {
+    position: absolute;
+    width: 376px;
+    height: 376px;
+    background: rgba(237, 188, 90, 0.7);
+    filter: blur(250px);
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    animation: zoomInOut 5s 2s infinite;
+    @include sm {
+      width: 276px;
+      height: 276px;
+    }
+  }
+  &.style-5 {
+    position: absolute;
+    width: 376px;
+    height: 376px;
+    right: 790px;
+    top: 160px;
+    background: rgba(237, 188, 90, 0.4);
+    filter: blur(200px);
+    z-index: 5;
+    animation: zoomInOut 5s 2s infinite;
+    @include xl {
+      right: 380px;
+      top: 240px;
+    }
+    @include lg {
+      right: 406px;
+      top: 150px;
+    }
+    @include sm {
+      width: 276px;
+      height: 276px;
+    }
+  }
+}

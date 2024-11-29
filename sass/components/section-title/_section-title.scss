@@ -1,0 +1,137 @@
+.section-title {
+  @include md {
+    margin-bottom: 30px;
+  }
+  @include sm {
+    margin-bottom: 30px;
+  }
+  &.style-1 {
+    @include sm {
+      flex-direction: column;
+      gap: 10px;
+    }
+    @include md {
+      margin-bottom: 0;
+      padding-bottom: 48px;
+      flex-direction: column;
+      gap: 0;
+    }
+    & h2 {
+      font-family: $heading-font;
+      font-size: 75px;
+      font-weight: 400;
+      line-height: 92.85px;
+      text-align: left;
+
+      @include lg {
+        font-size: 45px;
+        line-height: 75px;
+      }
+      @include rmaxwd(991) {
+        font-size: 35px;
+        line-height: 52px;
+      }
+      br {
+        @include rmaxwd(991) {
+          display: none;
+        }
+      }
+    }
+    .desc {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 29px;
+      text-transform: capitalize;
+    }
+    span {
+      color: #edbc5a;
+      font-weight: 300;
+      letter-spacing: 3.52px;
+      text-transform: uppercase;
+      display: block;
+      white-space: nowrap;
+      margin-top: -5px;
+      @include sm {
+        font-size: 16px;
+        margin-bottom: 0;
+      }
+    }
+  }
+  &.style-2 {
+    text-align: center;
+    & h2 {
+      @include lg {
+        font-size: 35px;
+      }
+      @include md {
+        font-size: 30px;
+      }
+      @include sm {
+        font-size: 25px;
+      }
+    }
+    span {
+      color: #edbc5a;
+      font-weight: 300;
+      letter-spacing: 3.52px;
+      text-transform: uppercase;
+      display: block;
+      @include sm {
+        font-size: 16px;
+      }
+    }
+  }
+  &-btn {
+    width: 259px;
+    height: 259px;
+    background-color: $white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 10%;
+    top: 130px;
+    z-index: 1;
+    @include sm {
+      width: 150px;
+      height: 150px;
+      position: relative;
+      right: unset;
+      top: unset;
+    }
+    @include md {
+      width: 130px;
+      height: 130px;
+      right: 0;
+      top: 55px;
+    }
+    @include lg {
+      width: 180px;
+      height: 180px;
+      right: 0;
+      top: 55px;
+    }
+    @include xl {
+      width: 200px;
+      height: 200px;
+      right: 0;
+      top: 100px;
+    }
+    a {
+      color: $black;
+      font-family: $heading-font;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 34.66px;
+      letter-spacing: 0.1em;
+      text-align: left;
+      @include rmaxwd(1199) {
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+    &.style-2 {
+    }
+  }
+}

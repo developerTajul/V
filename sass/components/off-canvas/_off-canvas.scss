@@ -1,0 +1,102 @@
+.off-canvas-menu{
+    width: 530px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: right center;
+    transition: all 0.5s ease 0s;
+    @include sm{
+        width: 430px;
+    }
+    @include rmaxwd(500){
+        width: 330px;
+    }
+    &.canvas-ative{
+        visibility: visible;
+        opacity: 1;
+        right: 0;
+        top: 0;
+        transform: scaleX(1);
+        @include xl{
+            right:0;
+        }
+    }
+    &-wrapper {
+        padding:70px 35px 380px 35px;
+    }
+    &-header{
+        .close-icon{
+            font-size: 30px;
+            cursor: pointer;
+        }
+    }
+    .content{
+        .appatment-form{
+            form {
+                label, input, textarea {
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 25px;
+                    background: transparent;
+                    border: 1px solid  ;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    padding: 10px 25px;
+                    color: #ffffff;
+                }
+                textarea {
+                    height: 100px;
+                    color: #ffffff;
+                }
+                a {
+                    color: white;
+                    padding: 10px 15px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    border: 1px solid $white;
+                    display: block;
+                    text-align: center;
+                    &:hover {
+                        background-color:$primary-color;
+                    }
+                }
+            }
+        }
+    }
+    &-overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        visibility: hidden;
+        opacity: 0;
+        transform: scaleX(0);
+        transform-origin: right center;
+        transition: all 0.5s ease 0s;
+        &.canvas-overlay-ative{
+            visibility: visible;
+            opacity: 1;
+            right: 0;
+            top: 0;
+            transform: scaleX(1);
+        }
+    }
+    .offcanves-socail-icon{
+        ul{
+            li{
+                margin:0 35px ;
+                @include sm{
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="zxx">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Transform your online presence with our innovative web design agency. We specialize in creating stunning, user-friendly websites that drive results." />
+    <meta name="keywords" content="Web Design, Web Development, UI/UX Design, Digital Agency, Website Development, Responsive Design, SEO-friendly websites" />
+    <meta name="author" content="CreBiz" />
+    <title>CreBiz - Web Design Agency HTML Template</title>
+    <link rel="icon" type="image/png" href="images/logo/favicon.png" />
+    <link rel="stylesheet" href="./css/font-main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.min.css" />
+    <link rel="stylesheet" href="css/slick.min.css" />
+    <link rel="stylesheet" href="css/nice-select.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- Preloader Start  -->
+    <div id="preloader">
+      <div id="preloader-status">
+        <div id="wifi-loader">
+          <svg viewBox="0 0 86 86" class="circle-outer">
+            <circle r="40" cy="43" cx="43" class="back"></circle>
+            <circle r="40" cy="43" cx="43" class="front"></circle>
+            <circle r="40" cy="43" cx="43" class="new"></circle>
+          </svg>
+          <svg viewBox="0 0 60 60" class="circle-middle">
+            <circle r="27" cy="30" cx="30" class="back"></circle>
+            <circle r="27" cy="30" cx="30" class="front"></circle>
+          </svg>
+          <div data-text="Loading..." class="text"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Preloader End  -->
+    <!-- Header Start -->
+    <header>
+      <div class="header-area body-black">
+        <div class="menu-bar fixed-menu">
+          <div class="container-fulid">
+            <div class="row align-items-center gx-0">
+              <div class="col-6 col-xl-2 col-lg-3 col-md-5 p-0">
+                <div class="header-area-image ml-100">
+                  <a href="index.html">
+                    <img src="./images/logo/header-logo.png" alt="logo" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-xl-10 col-lg-9 col-md-7">
+                <div class="header-area-menu d-flex justify-content-end d-xl-flex d-lg-flex d-md-flex align-items-center justify-content-xl-between justify-content-lg-between justify-content-md-end p-relative z-index-11">
+                  <nav>
+                    <ul class="main-menu d-xl-flex d-lg-flex justify-content-center align-items-center">
+                      <li class="scroll-effect">
+                        <a class="plus-icon" href="index.html">Home</a>
+                        <ul class="sub-menu">
+                          <li><a href="index.html">HomeOne</a></li>
+                          <li><a href="index-two.html">HomeTwo</a></li>
+                        </ul>
+                      </li>
+                      <li class="scroll-effect">
+                        <a href="about.html">About</a>
+                      </li>
+                      <li class="scroll-effect">
+                        <a class="plus-icon" href="#">Pages</a>
+                        <ul class="sub-menu">
+                          <li><a href="./team.html">Team</a></li>
+                          <li>
+                            <a href="./team-details.html">Team Details</a>
+                          </li>
+                          <li><a href="./contact.html">Contact</a></li>
+                          <li><a href="./coming-soon.html">Coming Soon</a></li>
+                        </ul>
+                      </li>
+                      <li class="scroll-effect">
+                        <a href="projects.html">Projects</a>
+                      </li>
+                      <li class="scroll-effect">
+                        <a class="plus-icon" href="blog.html">Blogs</a>
+                        <ul class="sub-menu">
+                          <li><a href="./blog.html">Blog Page</a></li>
+                          <li>
+                            <a href="./blog-details.html">Blog Details</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div id="toggle-button" class="button-like">
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                  </div>
+                  <div class="header-area-menu-icon style-2 mr-100">
+                    <a class="canvas-menu" href="#">
+                      <img src="images/icon/target.svg" alt="menu-bar" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Mobile Responsive Toggle Btn Start  -->
+              <div class="toggle-menus" id="toggle-active">
+                <div class="toggle-menu-header d-flex justify-content-between mb-40">
+                  <div class="logo">
+                    <img src="./images/logo/header-logo.png" alt="" />
+                  </div>
+                  <div class="toggle-close-icon">
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+                <nav>
+                  <ul class="dropdown">
+                    <li>
+                      <a href="index.html">Home</a>
+                      <div class="dropdown-btn">
+                        <button class="n width-100" onclick="toggleList(1)">
+                          <i class="fa-solid fa-plus"></i>
+                        </button>
+                      </div>
+                      <ul id="dropdown-toggle-menu-1" class="hidden-list">
+                        <li><a href="index.html">HomeOne</a></li>
+                        <li><a href="index-two.html">HomeTwo</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li>
+                      <a href="#">Pages</a>
+                      <div class="dropdown-btn">
+                        <button class="dropdown-toggle-btn width-100" onclick="toggleList(2)">
+                          <i class="fa-solid fa-plus"></i>
+                        </button>
+                      </div>
+                      <ul id="dropdown-toggle-menu-2" class="hidden-list">
+                        <li><a href="./team.html">Team</a></li>
+                        <li><a href="./team-details.html">Team Details</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li>
+                      <a href="./blog.html">Blogs</a>
+                      <div class="dropdown-btn">
+                        <button class="dropdown-toggle-btn width-100" onclick="toggleList(4)">
+                          <i class="fa-solid fa-plus"></i>
+                        </button>
+                      </div>
+                      <ul id="dropdown-toggle-menu-4" class="hidden-list">
+                        <li><a href="./blog.html">Blog Page</a></li>
+                        <li><a href="./blog-details.html">Blog Details</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="toggle-menu-contact">
+                  <h4 class="mb-25">Contact Info</h4>
+                  <div class="address mb-20">
+                    <i class="mr-10 fa-solid fa-location-dot"></i>
+                    <span>2972 Westheimer Rd. Santa Ana</span>
+                  </div>
+                  <div class="email mb-20">
+                    <i class="mr-10 fa-regular fa-envelope"></i>
+                    <a href="mailto:georgia.young@example.com">georgia.young@example.com</a>
+                  </div>
+                  <div class="phone">
+                    <i class="mr-10 fa-solid fa-phone"></i>
+                    <span>+123-456-7890</span>
+                  </div>
+                </div>
+                <div class="toggle-social-icon">
+                  <ul class="d-flex justify-content-between">
+                    <li>
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-basketball"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Mobile Responsive Toggle Btn End  -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+    <!-- Project Page Start  -->
+    <div class="project-page body-black">
+      <div class="image-card-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-md-6">
+              <div class="image-card style-8">
+                <div class="image">
+                  <img src="images/image-card/image-10.jpg" alt="" />
+                </div>
+                <div class="content-wrapper">
+                  <div class="icon">
+                    <img src="./images/icon/hand-pointer.svg" alt="" />
+                  </div>
+                  <div class="content">
+                    <h4 class="title">Jane Cooper</h4>
+                    <p class="desc">Graphic_designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="image-card style-8">
+                <div class="image">
+                  <img src="images/image-card/image-11.jpg" alt="" />
+                </div>
+                <div class="content-wrapper">
+                  <div class="icon">
+                    <img src="./images/icon/hand-pointer.svg" alt="" />
+                  </div>
+                  <div class="content">
+                    <h4 class="title">Jane Cooper</h4>
+                    <p class="desc">Graphic_designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="image-card style-8">
+                <div class="image">
+                  <img src="images/image-card/image-12.jpg" alt="" />
+                </div>
+                <div class="content-wrapper">
+                  <div class="icon">
+                    <img src="./images/icon/hand-pointer.svg" alt="" />
+                  </div>
+                  <div class="content">
+                    <h4 class="title">Jane Cooper</h4>
+                    <p class="desc">Graphic_designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="" -->
+            <div class="col-xl-4 col-md-6">
+              <div class="image-card style-8">
+                <div class="image">
+                  <img src="images/image-card/image-13.jpg" alt="" />
+                </div>
+                <div class="content-wrapper">
+                  <div class="icon">
+                    <img src="./images/icon/hand-pointer.svg" alt="" />
+                  </div>
+                  <div class="content">
+                    <h4 class="title">Jane Cooper</h4>
+                    <p class="desc">Graphic_designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="image-card style-8">
+                <div class="image">
+                  <img src="images/image-card/image-14.jpg" alt="" />
+                </div>
+                <div class="content-wrapper">
+                  <div class="icon">
+                    <img src="./images/icon/hand-pointer.svg" alt="" />
+                  </div>
+                  <div class="content">
+                    <h4 class="title">Jane Cooper</h4>
+                    <p class="desc">Graphic_designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="image-card style-8">
+                <div class="image">
+                  <img src="images/image-card/image-15.jpg" alt="" />
+                </div>
+                <div class="content-wrapper">
+                  <div class="icon">
+                    <img src="./images/icon/hand-pointer.svg" alt="" />
+                  </div>
+                  <div class="content">
+                    <h4 class="title">Jane Cooper</h4>
+                    <p class="desc">Graphic_designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Project Page End  -->
+    <!-- Footer Start -->
+    <footer>
+      <div class="footer-area body-black">
+        <div class="container">
+          <div class="row gx-0">
+            <div class="col-xl-12">
+              <div class="footer-area-quick-menu d-flex justify-content-between pb-80 pt-140 ml-120">
+                <div class="footer-area-quick-menu-one">
+                  <h4 class="mb-26">Quick Links</h4>
+                  <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">UI UX Design</a></li>
+                    <li><a href="./projects.html">Portfolio</a></li>
+                    <li><a href="#">Web Design</a></li>
+                  </ul>
+                </div>
+                <div class="footer-area-quick-menu-two ml-127 mr-92">
+                  <h4 class="mb-26">Quick Links</h4>
+                  <ul>
+                    <li>
+                      <a href="#">facebook</a>
+                    </li>
+                    <li>
+                      <a href="#">pinterest</a>
+                    </li>
+                    <li>
+                      <a href="#">pinterest</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-area-services">
+                  <h4 class="mb-26">Contact</h4>
+                  <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">How IT Works</a></li>
+                  </ul>
+                </div>
+                <div class="footer-area-mail-to">
+                  <h4 class="mb-26">Contact</h4>
+                  <div class="input-wrapper">
+                    <label class="email" for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" class="no-border" placeholder="your@email.com" />
+                  </div>
+                </div>
+                <div class="footer-area-sand-messege">
+                  <a href="./contact.html">
+                    <h4>Send</h4>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-end justify-content-between flex-wrap gap-20">
+            <div class="footer-area-company-logo">
+              <img src="./images/logo/footer-logo.png" alt="" />
+            </div>
+            <div class="footer-copy-right-info d-flex justify-content-center align-items-center pb-15">
+              <span>
+                ©2024
+                <a href="#">CreBiz</a>
+                All Rights Reserved
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll Up Section Start -->
+    <div id="scrollTop" class="scrollup-wrapper">
+      <div class="scrollup-btn">
+        <i class="fa-solid fa-chevron-up"></i>
+      </div>
+    </div>
+    <!-- Scroll Up Section End -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.js"></script>
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/inview.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/tilt.jquery.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/jquery.imagesloaded.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

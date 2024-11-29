@@ -1,0 +1,111 @@
+/**
+ * Stylesheet:  style.css
+ * Theme:       CreBiz - Web Design Agency HTML Template
+ * Version:     1.0
+ * Author:     	CreBiz
+ * 
+ */
+/* Table of contents
+=========================
+1.Section Title
+2.Slide-Button
+3.Title Border
+4.Section Card
+5.Toggle-Menu
+6.Counter Card
+7.Common Light Background
+8.Page Heading
+9.Form Card
+10.Off Canvas
+11.Preloader
+12.scroll Up
+13.Search Button
+14.Hero Section
+15.Text Marque Section
+16.Gallery Section
+17.About Section
+18.Portfolio Section
+19.Why Choose Us Section
+20.Team Section
+21.Video Popup Section
+22.Testimonial Section
+23.services Section
+24.pricing Section
+25.About Page
+26.Team Page
+27.Team Details Page
+28.Contact Page
+29.Service Page
+30.Services Details
+31.Projects Page
+32.Blog Details
+34.Error Page
+35.Header Section
+36.Blog News Section
+Footer
+
+
+===========================*/
+/* Theme Default CSS */
+@import './base/mixins';
+@import './base/variables';
+@import './base/theme-default';
+@import './base/default-spacing';
+@import './base/typography';
+@import './base/keyframes';
+@import './base/unittest';
+@import './base/common';
+
+// COMPONENTS
+@import './components/section-title/section-title';
+@import './components/slider-slide-btn/slider-slide-btn';
+@import './components/title-border/title-border';
+@import './components/section-card/section-card';
+@import './components/toggle-menu/toggle-menu';
+@import './components/counter/counter';
+@import './components/background-light-color/background-light-color';
+@import './components/pages-heading/pages-heading';
+@import './components/submit-form/submit-form';
+@import './components/off-canvas/off-canvas';
+@import './components/preloader/preloader';
+@import './components/scrollup/scrollup';
+@import './components/search-btn/search-btn';
+@import './components/accordion/accordion';
+@import './components/post-card/post-card';
+
+// SECTIONS
+@import './sections/hero-section';
+@import './sections/text-marque-section';
+@import './sections/gallery-section';
+@import './sections/about-section';
+@import './sections/portfolio-section';
+@import './sections/why-choose-us-section';
+@import './sections/team-section';
+@import './sections/video-popup-section';
+@import './sections/testimonial-section';
+@import './sections/brand-marque';
+@import './sections/services-section';
+@import './sections/pricing-section';
+@import './sections/art-gallery';
+@import './sections/faq-section';
+@import './sections/image-card-area';
+@import './sections/services-area';
+@import './sections/award-and-event-area';
+
+// Pagses
+@import './pages/about-page';
+@import './pages/team-page';
+@import './pages/team-details-page';
+@import './pages/contact';
+@import './pages/service-pages';
+@import './pages/services-details';
+@import './pages/projects-page';
+@import './pages/blog-details';
+@import './pages/error-page';
+@import './pages/coming-soon';
+
+// LAYOUTS
+@import './layouts/header';
+@import './layouts/blog-news-section';
+@import './layouts/footer';
+@import './layouts/sidebar';

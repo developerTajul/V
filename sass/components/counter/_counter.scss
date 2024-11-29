@@ -1,0 +1,170 @@
+.counter-area {
+  @include md {
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 96px;
+  }
+  @include sm {
+    gap: 50px;
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 42px;
+  }
+  @include rmaxwd(520) {
+    gap: 10px;
+  }
+  &-inner-wrapper {
+    @include sm {
+      padding-left: 0;
+      display: flex;
+      gap: 30px;
+    }
+    @include xl {
+      gap: 30px;
+    }
+  }
+  &-inner-wrapper {
+    @include sm {
+      padding-left: 0;
+      display: flex;
+      gap: 30px;
+    }
+    @include xl {
+      gap: 30px;
+    }
+  }
+  .counter-area-wrapper {
+    text-align: center;
+    @include md {
+      margin-left: 20px;
+    }
+    @include sm {
+      margin-bottom: 10px;
+    }
+    & span {
+      color: #fff;
+      font-family: Gilroy-Bold;
+      font-size: 120px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      @include sm {
+        font-size: 60px;
+      }
+    }
+    p {
+      color: $white;
+      font-family: $heading-font;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 29px; /* 161.111% */
+      letter-spacing: 6.66px;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      @include xl {
+        letter-spacing: 4px;
+        font-size: 17px;
+      }
+      @include md {
+        font-size: 16px;
+        letter-spacing: 4.66px;
+      }
+      @include sm {
+        font-size: 15px;
+        letter-spacing: 2.66px;
+      }
+      @include rmaxwd(520) {
+        font-size: 14px;
+        letter-spacing: 1px;
+      }
+      @include rmaxwd(420) {
+        font-size: 12px;
+        letter-spacing: 0;
+      }
+    }
+  }
+  &.style-2 {
+    @include sm {
+      padding-bottom: 10px;
+    }
+    @include md {
+      padding-bottom: 40px;
+      padding-top: 0;
+    }
+    @include lg {
+      padding-bottom: 60px;
+    }
+  }
+  &.style-3 {
+    .counter-area-wrapper {
+      @include md {
+        margin-right: 20px;
+      }
+      @include sm {
+        margin-right: 20px;
+      }
+      & span {
+        color: #fff;
+        font-family: Gilroy-Bold;
+        font-size: 120px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        @include md {
+          font-size: 60px;
+        }
+        @include sm {
+          font-size: 60px;
+        }
+      }
+      p {
+        color: #fff;
+        font-family: Rubik;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 29px; /* 161.111% */
+        letter-spacing: 6.66px;
+        text-transform: uppercase;
+        @include xl {
+          letter-spacing: 4px;
+          font-size: 17px;
+        }
+        @include lg {
+          letter-spacing: 3.66px;
+          font-size: 14px;
+        }
+        @include md {
+          letter-spacing: 1.66px;
+          font-size: 14px;
+        }
+        @include sm {
+          font-size: 15px;
+          letter-spacing: 2.66px;
+        }
+        @include rmaxwd(520) {
+          font-size: 14px;
+          letter-spacing: 1px;
+        }
+        @include rmaxwd(420) {
+          font-size: 12px;
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+  &.style-4 {
+    @include sm {
+      padding-bottom: 10px;
+    }
+    @include md {
+      padding-bottom: 42px;
+      padding-top: 50px;
+    }
+    @include lg {
+      padding-bottom: 62px;
+      padding-top: 70px;
+    }
+  }
+}

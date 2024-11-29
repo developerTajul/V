@@ -1,0 +1,59 @@
+.error-page{
+    &::before{
+        content: "";
+        position: absolute;
+        width: 508px;
+        height: 508px; 
+        left: -106px;
+        bottom: -170px;
+        background: rgba(237, 188, 90, 0.7);
+        filter: blur(200px);
+        animation: zoomInOut 5s 2s infinite;
+        z-index: 0;
+        border-radius: 508px;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        width: 381px;
+        height: 381px;
+        right:0;
+        top: -162px;
+        background: rgba(237, 188, 90, 0.7);
+        filter: blur(200px);
+        animation: zoomInOut 5s 2s infinite;
+        z-index: 0;
+        border-radius: 381px;
+    }
+    &-wrapper{
+        background: #1A1717;
+        padding: 132px 86px 132px 110px;
+        border-radius: 20px;
+    }
+    &-btn{
+        a{
+            display: inline-block;
+            padding: 13px 30px;
+            border: 1px solid rgba(176, 176, 176, 0.30);
+            border-radius: 57px;
+            @include transition;
+            &::after{
+                content: "\e914";
+                font-family: icomoon;
+                color: $primary-color;
+                margin-left: 16px;
+                @include transition;
+            }
+            &:hover{
+                background: $primary-color;
+                color: $white;
+                &::after{
+                    color: $white;
+                }
+            }
+        }
+    }
+    &-bg {
+        margin-left: 36px;
+    }
+}

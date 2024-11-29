@@ -1,0 +1,197 @@
+.pricing-area {
+  @include xl {
+    padding-bottom: 138px;
+    padding-top: 108px;
+  }
+
+  @include lg {
+    padding-bottom: 100px;
+    padding-top: 70px;
+  }
+
+  @include md {
+    padding-bottom: 55px;
+    padding-top: 55px;
+  }
+
+  @include sm {
+    padding-bottom: 40px;
+    padding-top: 30px;
+  }
+  .section-title {
+    @include sm {
+      padding-bottom: 0;
+      margin-bottom: 10px;
+    }
+    @include md {
+      padding-bottom: 0;
+      flex-direction: column;
+      gap: 0;
+    }
+    @include lg {
+      padding-bottom: 0;
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+  &-card {
+    @include rmaxwd(1199) {
+      margin-top: 30px;
+    }
+    &:hover {
+      .pricing-area-card-wrapper {
+        border-color: $primary-color;
+        .pricing-area-card-text {
+          .title {
+            background-color: $primary-color;
+          }
+        }
+        .pricing-area-cards-list {
+          border-color: $primary-color;
+          .pricing-area-cards-btn {
+            a {
+              background-color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-card-wrapper {
+    padding: 60px 48px;
+    border: 1px solid $white;
+    @include transition;
+    @include sm {
+      padding: 40px 30px;
+    }
+  }
+
+  &-card-text {
+    @include lg {
+      padding-bottom: 22px;
+    }
+
+    @include rmaxwd(480) {
+      padding-bottom: 15px;
+    }
+    .title {
+      font-size: 45px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      background-color: $white;
+      padding: 5px 30px;
+      border-radius: 5px;
+      margin-bottom: 35px;
+      color: $black;
+      display: inline-block;
+    }
+    .desc {
+      font-family: $body-font;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 29px;
+      margin-bottom: 30px;
+    }
+    .price {
+      font-family: $heading-font;
+      font-size: 75px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+      span {
+        color: #fff;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  &-cards-list {
+    padding-top: 48px;
+    border-top: 1px solid $white;
+    ul {
+      li {
+        margin-bottom: 45px;
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: $white;
+
+        @include sm {
+          margin-bottom: 30px;
+        }
+        @include lg {
+          font-size: 14px;
+        }
+
+        &.checkmark {
+          &::before {
+            content: '\e910';
+            font-size: 20px;
+            color: $primary-color;
+            font-family: 'icomoon';
+            margin: 0 20px 0 0;
+          }
+        }
+
+        &.closemark {
+          &::before {
+            content: '\e90c';
+            font-size: 20px;
+            color: $primary-color;
+            font-family: 'icomoon';
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  &-cards-btn {
+    display: flex;
+    margin-top: 10px;
+    @include transition;
+
+    a {
+      font-size: 14px;
+      padding: 5px 20px;
+      border-radius: 50px;
+      display: inline-block;
+      background-color: $secondary-color;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      color: $black;
+    }
+  }
+
+  .visibles-card {
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
+    max-height: auto;
+    @include transition;
+
+    a {
+      font-size: 14px;
+      padding: 10px 20px;
+      border-radius: 65px;
+      border: 1px solid #3c3c3c;
+      display: inline-block;
+    }
+
+    img {
+      padding-left: 15px;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+
+.about-area-card-section{
+    padding: 0 110px 0 110px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @include xl{
+        padding: 0 70px 0 70px;
+    }
+    @include lg{
+        padding: 0 100px 0 100px;
+        grid-template-columns: 1fr 1fr;
+    }
+    @include md{
+        padding:0 70px 0 70px;
+        grid-template-columns: 1fr 1fr;
+    }
+    @include sm{
+        padding: 0 30px 0 30px;
+    }
+    .card-wrapper{
+        &.style-1 {
+            border: 1px solid #262626;
+            padding: 40px 20px 20px 30px;
+            @include xl{
+                padding: 40px 12px 12px 30px;
+            }
+            @include lg{
+                padding: 40px 84px 20px 50px;
+            }
+            @include md{
+                padding: 30px 14px 12px 30px;
+            }
+            
+            & .card-text{
+                h3 {
+                    color: #FFF;
+                    font-family: Gilroy-Medium;
+                    font-size: 18px;
+                    font-style: normal;
+                    margin-bottom: 30px;
+                }
+                @include md{
+                    margin-bottom: 20px;
+                }
+            }
+            & .card-content{
+                & a {
+                    width: 32px;
+                    height: 32px;
+                    background: #333;
+                    display: inline-block;
+                    border-radius: 50%;
+                    text-align: center;
+                    transition: all 0.5s ease 0s;
+                }
+                & span {
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: rgba(255, 255, 255, 0.15);
+                    font-family: Gilroy-Medium;
+                    font-size: 50px;
+                    font-weight: 400;
+                    line-height: normal;
+                    color: transparent;
+                    transition: all 0.5s ease 0s;
+                }
+            }
+        }
+        &:hover{
+            & .card-content{
+                & a {
+                    width: 42px;
+                    height: 42px;
+                    background: #EDBC5A;
+                    line-height: 38px;
+                    
+                }
+                & span {
+                    color: #EDBC5A;
+                }
+            }
+        }
+    }
+}
+
+
+

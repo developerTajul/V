@@ -1,0 +1,52 @@
+.award-and-event-area {
+  position: relative;
+  &.style-2 {
+    @include md {
+      padding-top: 80px;
+    }
+    @include lg {
+      padding-top: 100px;
+      padding-bottom: 30px;
+    }
+    @include xl {
+      padding-top: 140px;
+    }
+    .accordion-wrapper {
+      .wuc-accordion {
+        &:last-child {
+          @include lg {
+            margin-top: 30px;
+            padding-bottom: 0;
+          }
+        }
+        .wuc-accordion-wrapper {
+          @include sm {
+            margin-bottom: 25px;
+          }
+        }
+      }
+    }
+  }
+  @include rmaxwd(991) {
+    padding-bottom: 0;
+    padding-top: 55px;
+  }
+  .section-title {
+    @include sm {
+      padding-bottom: 16px;
+    }
+  }
+  .wuc-accordion {
+    @include sm {
+      padding-bottom: 20px;
+    }
+  }
+  .bg-img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    @include rmaxwd(1399) {
+      display: none;
+    }
+  }
+}

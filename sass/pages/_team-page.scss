@@ -1,0 +1,107 @@
+.team-page {
+  .team-wcu {
+    &-wrapper {
+      margin: 57px 0 0 100px;
+
+      @include lg {
+        margin: 20px 0 0 37px;
+      }
+
+      @include md {
+        margin: 0 0 0 10px;
+      }
+
+      @include sm {
+        margin: 30px 0 0 0;
+      }
+    }
+
+    &-title {
+      margin-bottom: 50px;
+
+      @include md {
+        margin-bottom: 20px;
+      }
+
+      @include sm {
+        margin-bottom: 30px;
+      }
+
+      h5 {
+        color: #fff;
+        margin-bottom: 20px;
+
+        @include md {
+          font-size: 17px;
+          margin-bottom: 13px;
+        }
+      }
+
+      p {
+        color: #fff;
+
+        @include md {
+          font-size: 13px;
+        }
+      }
+    }
+
+    &-info {
+      @include xl {
+        gap: 55px;
+      }
+
+      @include lg {
+        gap: 50px;
+      }
+
+      @include md {
+        gap: 50px;
+      }
+
+      @include sm {
+        gap: 15px;
+      }
+    }
+
+    &-info-title {
+      span {
+        &::before {
+          font-size: 50px;
+        }
+      }
+
+      h5 {
+        color: #fff;
+
+        @include md {
+          font-size: 17px;
+        }
+
+        @include sm {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+  .award-and-event-area {
+    .accordion-wrapper {
+      .wuc-accordion {
+        &.style-2 {
+          &:last-child {
+            @include sm {
+              padding-bottom: 0;
+            }
+          }
+          .wuc-accordion-main-content {
+            &.wuc-accordion-wrapper {
+              @include sm {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

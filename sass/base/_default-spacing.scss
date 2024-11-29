@@ -1,0 +1,62 @@
+/*--
+    - Margin & Padding
+-----------------------------------------*/
+/*-- Margin Top --*/
+@for $i from 1 through 300 {
+  .mt-#{1 * $i} {
+    margin-top: 1px * $i;
+  }
+}
+/*-- Margin Bottom --*/
+@for $i from 1 through 300 {
+  .mb-#{1 * $i} {
+    margin-bottom: 1px * $i;
+  }
+}
+/*-- Margin Left --*/
+@for $i from 1 through 400 {
+  .ml-#{1 * $i} {
+    margin-left: 1px * $i;
+  }
+}
+
+/*-- Margin Right --*/
+@for $i from 1 through 300 {
+  .mr-#{1 * $i} {
+    margin-right: 1px * $i;
+  }
+}
+
+/*-- Padding Top --*/
+@for $i from 1 through 300 {
+  .pt-#{1 * $i} {
+    padding-top: 1px * $i;
+  }
+}
+
+/*-- Padding Bottom --*/
+@for $i from 1 through 500 {
+  .pb-#{1 * $i} {
+    padding-bottom: 1px * $i;
+  }
+}
+
+/*-- Padding Left --*/
+@for $i from 1 through 300 {
+  .pl-#{1 * $i} {
+    padding-left: 1px * $i;
+  }
+}
+
+/*-- Padding Right --*/
+@for $i from 1 through 300 {
+  .pr-#{1 * $i} {
+    padding-right: 1px * $i;
+  }
+}
+/*-- gap --*/
+@for $i from 1 through 300 {
+  .gap-#{1 * $i} {
+    gap: 1px * $i;
+  }
+}

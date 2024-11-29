@@ -1,0 +1,687 @@
+.hero-area {
+  @include rmaxwd(1399) {
+    padding-top: 0;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 376px;
+    height: 376px;
+    right: 50px;
+    top: -90px;
+    background: rgba(237, 188, 90, 0.7);
+    filter: blur(200px);
+    z-index: 5;
+    animation: zoomInOut 5s 2s infinite;
+  }
+
+  &-bg-one {
+    top: 3px;
+    left: 2px;
+    width: 376px;
+    height: 376px;
+    background: rgba(237, 188, 90, 0.7);
+    filter: blur(200px);
+
+    @include xl {
+      opacity: 0.3;
+    }
+
+    @include lg {
+      opacity: 0.3;
+    }
+  }
+
+  &-bg-four {
+    width: 390px;
+    height: 687px;
+    right: 50%;
+    bottom: 0;
+    transform: translate(40%, -7%);
+
+    @include rmaxwd(1550) {
+      right: 15%;
+    }
+
+    // @include lg {
+    //   right: 5%;
+    // }
+
+    @include rmaxwd(1399) {
+      display: none;
+    }
+  }
+
+  &-bg-block-shape {
+    top: 110px;
+    right: 80px;
+    z-index: 11;
+
+    @include rmaxwd(1700) {
+      max-width: 50%;
+      max-height: 50%;
+      display: none;
+    }
+
+    @include rmaxwd(1500) {
+      max-width: 45%;
+      max-height: 45%;
+    }
+
+    @include xl {
+      max-width: 35%;
+      max-height: 35%;
+      right: 65px;
+    }
+
+    @include rmaxwd(1199) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+  &-bg-five {
+    top: 0;
+    right: 25px;
+    @include rmaxwd(1399) {
+      display: none;
+    }
+  }
+  &-bg-six {
+    bottom: 0;
+    right: 25px;
+    @include rmaxwd(1399) {
+      display: none;
+    }
+  }
+
+  &-title-one {
+    position: relative;
+    font-size: 480px;
+    letter-spacing: 12.5px;
+
+    @include xl {
+      font-size: 280px;
+    }
+
+    @include lg {
+      font-size: 260px;
+    }
+
+    @include md {
+      font-size: 186px;
+    }
+
+    @include sm {
+      font-size: 82px;
+    }
+
+    & span {
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #fff;
+      color: transparent;
+
+      &::before {
+        content: '';
+        width: 149px;
+        height: 132px;
+        background: url(../images/shape/hero-1-super-toroid-black-matte-2.png)
+          no-repeat 100% 100%;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 575px;
+        top: 0;
+        z-index: -1;
+        animation: rotated_circle 30s infinite;
+
+        @include xl {
+          left: 480px;
+        }
+
+        @include lg {
+          left: 480px;
+          width: 120px;
+          height: 110px;
+        }
+
+        @include md {
+          left: 410px;
+          width: 100px;
+          height: 90px;
+        }
+
+        @include sm {
+          width: 70px;
+          height: 65px;
+          left: 330px;
+        }
+
+        @include rmaxwd(576) {
+          width: 50px;
+          height: 50px;
+          left: 200px;
+          top: -5px;
+        }
+
+        @include xs {
+          display: none;
+        }
+      }
+
+      &::after {
+        content: '';
+        width: 180px;
+        height: 156px;
+        background: url(../../images/shape/hero-1-element-3.png) no-repeat 100%
+          100%;
+        background-size: 100% 100%;
+        position: absolute;
+        right: 350px;
+        top: 56px;
+        z-index: -1;
+
+        @include xl {
+          right: 284px;
+          top: 38px;
+        }
+
+        @include lg {
+          right: -10px;
+          right: 157px;
+          width: 126px;
+          height: 118px;
+        }
+
+        @include md {
+          right: 48px;
+          width: 100px;
+          height: 90px;
+          top: 35px;
+        }
+
+        @include sm {
+          width: 70px;
+          height: 65px;
+          right: 7px;
+        }
+
+        @include rmaxwd(576) {
+          width: 70px;
+          height: 65px;
+          left: 264px;
+          top: 13px;
+        }
+
+        @include xs {
+          display: none;
+        }
+      }
+    }
+  }
+  &-short-title {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    transform: translate(100%, -100%);
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px; /* 145% */
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    @include sm {
+      transform: none;
+      font-size: 14px;
+      transform: translate(5%, 90%);
+      left: 0;
+    }
+    @include md {
+      transform: none;
+      font-size: 16px;
+      transform: translate(25%, 50%);
+      left: 0;
+    }
+    @include lg {
+      transform: translate(30%, 25%);
+      left: 0;
+    }
+    @include xl {
+      transform: translate(30%, 25%);
+      left: 0;
+    }
+  }
+
+  &-title-two {
+    color: #fff;
+    font-family: $heading-font;
+    font-size: 180px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 9px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+
+    @include xl {
+      font-size: 65px;
+    }
+
+    @include lg {
+      font-size: 45px;
+    }
+
+    @include md {
+      font-size: 46px;
+    }
+
+    @include sm {
+      font-size: 50px;
+      letter-spacing: 18px;
+    }
+
+    @include rmaxwd(576) {
+      font-size: 50px;
+    }
+
+    @include xs {
+      font-size: 20px;
+    }
+  }
+  &-slider-inner-text {
+    bottom: 140px;
+    left: 114px;
+
+    @include lg {
+      bottom: 60px;
+    }
+
+    @include md {
+      bottom: 70px;
+    }
+
+    @include sm {
+      bottom: 70px;
+    }
+
+    @include rmaxwd(480) {
+      bottom: 50px;
+      left: 55px;
+    }
+
+    & h3 {
+      @include lg {
+        margin-bottom: 15px;
+        font-size: 30px;
+      }
+
+      @include md {
+        margin-bottom: 15px;
+        font-size: 30px;
+      }
+
+      @include sm {
+        margin-bottom: 10px;
+        font-size: 22px;
+      }
+
+      @include xs {
+        margin-bottom: 10px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  &-slider-text-1 {
+    color: #b0b0b0;
+
+    @include xs {
+      font-size: 12px;
+    }
+  }
+
+  &-slider-text-2 {
+    & span {
+      font-family: Gilroy-Light;
+    }
+  }
+
+  &-author-Wrapper {
+    height: 170px;
+    br {
+      @include sm {
+        display: none;
+      }
+    }
+    @include rmaxwd(1399) {
+      margin-top: 30px;
+    }
+  }
+
+  &-author-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    & h5 {
+      color: #fff;
+      font-family: Rubik;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 29px;
+    }
+
+    & span {
+      color: #fff;
+      font-family: Rubik;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+  }
+
+  &-author-profile {
+    .author-img-wrapper {
+      width: 62px;
+      height: 62px;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+// hero-area honme-2
+.hero-area-two {
+  position: relative;
+
+  @include xl {
+    padding-top: 28px;
+  }
+
+  @include lg {
+    padding-top: 25px;
+  }
+
+  @include md {
+    padding-top: 20px;
+  }
+
+  @include sm {
+    padding-top: 20px;
+  }
+  .circle-shape {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    @include rmaxwd(1399) {
+      display: none;
+    }
+  }
+  .ornament {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    transform: translate(100%, -40%);
+    @include rmaxwd(1399) {
+      display: none;
+    }
+  }
+
+  &-first-containt-inner {
+    position: relative;
+    .hero-area-short-title {
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 9.45px;
+      text-transform: uppercase;
+      transform: translate(30%, 50%);
+      @include sm {
+        transform: translate(0px, 25px);
+        font-size: 13px;
+        letter-spacing: 2px;
+      }
+      @include md {
+        transform: translate(50%, 25px);
+        font-size: 13px;
+        letter-spacing: 2px;
+      }
+      @include lg {
+        transform: translate(50%, 25px);
+        font-size: 20px;
+        letter-spacing: 2px;
+      }
+      @include xl {
+        transform: translate(50%, 25px);
+        font-size: 25px;
+        letter-spacing: 2px;
+      }
+    }
+
+    h1 {
+      text-transform: uppercase;
+
+      @include xl {
+        font-size: 130px;
+      }
+
+      @include lg {
+        font-size: 105px;
+      }
+
+      @include md {
+        font-size: 82px;
+      }
+
+      @include sm {
+        font-size: 75px;
+        letter-spacing: 9px;
+      }
+
+      &.after-shape {
+        position: relative;
+
+        &::after {
+          content: '';
+          background: url(../../images/shape/h2-hero-star-shape.svg) no-repeat
+            100% 100%;
+          background-size: 100% 100%;
+          width: 132px;
+          height: 132px;
+          z-index: 1;
+          position: absolute;
+          margin-left: 55px;
+
+          @include md {
+            width: 120px;
+            height: 120px;
+            margin: -15px 0 0 33px;
+          }
+
+          @include sm {
+            width: 60px;
+            height: 60px;
+            margin: -8px 0 0 33px;
+          }
+
+          @include rmaxwd(480) {
+            width: 60px;
+            height: 60px;
+            margin: -20px 0 0 33px;
+          }
+        }
+      }
+
+      span {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff;
+        color: transparent;
+      }
+    }
+  }
+
+  &-second-inner {
+    margin-left: -60px;
+    margin-left: -60px;
+
+    @include rmaxwd(1600) {
+      margin-left: 0;
+    }
+  }
+
+  &-contain-img {
+    border-radius: 250px;
+
+    @include md {
+      margin-bottom: 30px;
+    }
+
+    @include sm {
+      margin-bottom: 30px;
+    }
+  }
+
+  &-contain-text {
+    width: 191px;
+    height: 191px;
+    border-radius: 50%;
+    background: $primary-color;
+    text-align: center;
+    padding: 40px 36px;
+    bottom: 0;
+    right: -10px;
+
+    @include lg {
+      width: 140px;
+      height: 140px;
+      padding: 18px 36px;
+    }
+
+    @include sm {
+      width: 120px;
+      height: 120px;
+      padding: 10px 17px;
+    }
+
+    @include rmaxwd(480) {
+      width: 90px;
+      height: 90px;
+      padding: 10px 17px;
+    }
+
+    a {
+      display: inline-block;
+      font-family: Gilroy-Bold;
+
+      span {
+        font-size: 40px;
+        color: $black;
+        @include transition;
+
+        @include sm {
+          font-size: 25px;
+        }
+      }
+
+      h4 {
+        font-size: 20px;
+        font-weight: 400;
+        color: $black;
+        @include transition;
+
+        @include sm {
+          font-size: 20px;
+        }
+
+        @include rmaxwd(480) {
+          font-size: 16px;
+        }
+      }
+
+      &:hover {
+        span,
+        h4 {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  &-clint-review {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+
+    p {
+      @include sm {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &-client-info {
+    .client-img {
+      .single-images {
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        border: 3px solid #fff;
+      }
+
+      .clint-1 {
+        left: 0;
+        z-index: 1;
+      }
+
+      .clint-2 {
+        left: 31px;
+        z-index: 2;
+      }
+
+      .clint-3 {
+        left: 62px;
+        z-index: 3;
+      }
+    }
+
+    .pluse-shape {
+      a {
+        width: 62px;
+        height: 62px;
+        background: #edbc5a;
+        display: inline-block;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 60px;
+        border: 3px solid $secondary-color;
+        left: 96px;
+        z-index: 4;
+      }
+
+      &:hover {
+        a {
+          color: $black;
+        }
+      }
+    }
+
+    .client-text {
+      p {
+        color: $secondary-color;
+
+        @include lg {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
