@@ -61,6 +61,11 @@
         visibility: hidden;
       }
       & li {
+        &.active {
+          > a {
+            color: $primary-color;
+          }
+        }
         &.scroll-effect {
           padding: 57px 0;
           @include transition;
@@ -174,6 +179,12 @@
       &::before {
         font-size: 30px;
       }
+    }
+    .canvas-menu {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 35px;
     }
   }
   &-touch-btn {

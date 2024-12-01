@@ -18,10 +18,10 @@ body {
   direction: ltr;
 }
 p {
+  font-family: $body-font;
   font-size: 16px;
   font-weight: 400;
-  font-family: $body-font;
-  color: #b0b0b0;
+  color: #707070;
   line-height: 29px;
   margin: 0 0 15px;
 }
@@ -60,33 +60,33 @@ h1 {
 }
 
 h2 {
-  font-size: 75px;
-  line-height: 92.85px;
-  font-weight: 400;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: normal;
 }
 
 h3 {
-  font-size: 38px;
+  font-size: 40px;
+  font-weight: 500;
   line-height: normal;
-  font-weight: 400;
 }
 
 h4 {
-  font-size: 28px;
+  font-size: 30px;
+  font-weight: 500;
   line-height: normal;
-  font-weight: 400;
 }
 
 h5 {
   font-size: 20px;
+  font-weight: 500;
   line-height: 29px;
-  font-weight: 600;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 500;
   line-height: 29px;
-  font-weight: 600;
 }
 
 label {
@@ -262,21 +262,9 @@ code {
 .wp-block-loginout a,
 input.theme-btn {
   display: inline-flex;
-  background-color: $primary-color;
-  border: 1px solid $primary-color;
-  color: $white;
-  padding: 14px 24px;
-  text-align: center;
-  font-weight: 700;
-  font-family: $heading-font;
-  text-transform: uppercase;
-  position: relative;
-  @include transition;
-  font-size: 16px;
-  letter-spacing: 1.28px;
   align-items: center;
-  gap: 15px;
-  overflow: hidden;
+  justify-content: center;
+  gap: 20px;
   z-index: 2;
   white-space: nowrap;
 
@@ -285,6 +273,24 @@ input.theme-btn {
     font-size: 14px;
   }
 
+  .icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $white;
+  }
+  .desc {
+    margin-bottom: 0;
+    font-family: $body-font;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    color: $white;
+  }
   //i {
   //  display: inline-flex;
   //  align-items: center;
@@ -524,9 +530,7 @@ input.theme-btn {
 }
 
 // Elementor Default Padding
-.elementor-column-gap-default
-  > .elementor-column
-  > .elementor-element-populated {
+.elementor-column-gap-default > .elementor-column > .elementor-element-populated {
   padding: 0 12px !important;
 }
 

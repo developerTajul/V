@@ -1,28 +1,13 @@
 .hero-area {
+  margin-top: -140px;
+  padding-top: 290px;
   @include rmaxwd(1399) {
     padding-top: 0;
   }
 
-  &::after {
-    content: '';
-    position: absolute;
-    width: 376px;
-    height: 376px;
-    right: 50px;
-    top: -90px;
-    background: rgba(237, 188, 90, 0.7);
-    filter: blur(200px);
-    z-index: 5;
-    animation: zoomInOut 5s 2s infinite;
-  }
-
   &-bg-one {
-    top: 3px;
-    left: 2px;
-    width: 376px;
-    height: 376px;
-    background: rgba(237, 188, 90, 0.7);
-    filter: blur(200px);
+    top: 0;
+    left: 0;
 
     @include xl {
       opacity: 0.3;
@@ -33,63 +18,10 @@
     }
   }
 
-  &-bg-four {
-    width: 390px;
-    height: 687px;
-    right: 50%;
-    bottom: 0;
-    transform: translate(40%, -7%);
-
-    @include rmaxwd(1550) {
-      right: 15%;
-    }
-
-    // @include lg {
-    //   right: 5%;
-    // }
-
-    @include rmaxwd(1399) {
-      display: none;
-    }
-  }
-
-  &-bg-block-shape {
-    top: 110px;
-    right: 80px;
-    z-index: 11;
-
-    @include rmaxwd(1700) {
-      max-width: 50%;
-      max-height: 50%;
-      display: none;
-    }
-
-    @include rmaxwd(1500) {
-      max-width: 45%;
-      max-height: 45%;
-    }
-
-    @include xl {
-      max-width: 35%;
-      max-height: 35%;
-      right: 65px;
-    }
-
-    @include rmaxwd(1199) {
-      display: none;
-      visibility: hidden;
-    }
-  }
-  &-bg-five {
+  &-bg-two {
     top: 0;
-    right: 25px;
-    @include rmaxwd(1399) {
-      display: none;
-    }
-  }
-  &-bg-six {
-    bottom: 0;
-    right: 25px;
+    right: 0;
+
     @include rmaxwd(1399) {
       display: none;
     }
@@ -97,140 +29,37 @@
 
   &-title-one {
     position: relative;
-    font-size: 480px;
-    letter-spacing: 12.5px;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
 
     @include xl {
-      font-size: 280px;
+      font-size: 180px;
     }
 
     @include lg {
-      font-size: 260px;
+      font-size: 160px;
     }
 
     @include md {
-      font-size: 186px;
+      font-size: 140px;
     }
 
     @include sm {
-      font-size: 82px;
-    }
-
-    & span {
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: #fff;
-      color: transparent;
-
-      &::before {
-        content: '';
-        width: 149px;
-        height: 132px;
-        background: url(../images/shape/hero-1-super-toroid-black-matte-2.png)
-          no-repeat 100% 100%;
-        background-size: 100% 100%;
-        position: absolute;
-        left: 575px;
-        top: 0;
-        z-index: -1;
-        animation: rotated_circle 30s infinite;
-
-        @include xl {
-          left: 480px;
-        }
-
-        @include lg {
-          left: 480px;
-          width: 120px;
-          height: 110px;
-        }
-
-        @include md {
-          left: 410px;
-          width: 100px;
-          height: 90px;
-        }
-
-        @include sm {
-          width: 70px;
-          height: 65px;
-          left: 330px;
-        }
-
-        @include rmaxwd(576) {
-          width: 50px;
-          height: 50px;
-          left: 200px;
-          top: -5px;
-        }
-
-        @include xs {
-          display: none;
-        }
-      }
-
-      &::after {
-        content: '';
-        width: 180px;
-        height: 156px;
-        background: url(../../images/shape/hero-1-element-3.png) no-repeat 100%
-          100%;
-        background-size: 100% 100%;
-        position: absolute;
-        right: 350px;
-        top: 56px;
-        z-index: -1;
-
-        @include xl {
-          right: 284px;
-          top: 38px;
-        }
-
-        @include lg {
-          right: -10px;
-          right: 157px;
-          width: 126px;
-          height: 118px;
-        }
-
-        @include md {
-          right: 48px;
-          width: 100px;
-          height: 90px;
-          top: 35px;
-        }
-
-        @include sm {
-          width: 70px;
-          height: 65px;
-          right: 7px;
-        }
-
-        @include rmaxwd(576) {
-          width: 70px;
-          height: 65px;
-          left: 264px;
-          top: 13px;
-        }
-
-        @include xs {
-          display: none;
-        }
-      }
+      font-size: 100px;
     }
   }
   &-short-title {
-    position: absolute;
-    left: 15px;
-    bottom: 15px;
-    transform: translate(100%, -100%);
-    margin-bottom: 0;
-    color: #fff;
-    font-size: 20px;
+    font-family: Cormorant;
+    font-size: 120px;
     font-style: normal;
     font-weight: 600;
-    line-height: 29px; /* 145% */
-    letter-spacing: 6px;
+    line-height: normal;
+    letter-spacing: 49.2px;
     text-transform: uppercase;
+    color: $white;
     @include sm {
       transform: none;
       font-size: 14px;
@@ -490,8 +319,7 @@
 
         &::after {
           content: '';
-          background: url(../../images/shape/h2-hero-star-shape.svg) no-repeat
-            100% 100%;
+          background: url(../../images/shape/h2-hero-star-shape.svg) no-repeat 100% 100%;
           background-size: 100% 100%;
           width: 132px;
           height: 132px;
