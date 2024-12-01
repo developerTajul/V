@@ -16162,6 +16162,7 @@ html {
 .hero-area {
   margin-top: -140px;
   padding-top: 290px;
+  height: 1020px;
 }
 @media (max-width: 1399px) {
   .hero-area {
@@ -16190,6 +16191,10 @@ html {
   .hero-area-bg-two {
     display: none;
   }
+}
+.hero-area-bg-three {
+  bottom: 0;
+  left: 0;
 }
 .hero-area-title-one {
   position: relative;
