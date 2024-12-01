@@ -1,0 +1,208 @@
+.wuc-accordion {
+  @include rmaxwd(1399) {
+    padding-bottom: 140px;
+  }
+  &:first-child {
+    @include lg {
+      padding-bottom: 20px;
+    }
+    @include xl {
+      padding-bottom: 20px;
+    }
+  }
+  &:last-child {
+    @include lg {
+      padding-bottom: 0;
+    }
+    @include xl {
+      padding-bottom: 0;
+    }
+  }
+  .section-specing {
+    padding: 53px 97px 31px 105px;
+    border-radius: 20px;
+    background: #1a1717;
+    @include xl {
+      padding: 50px 37px 31px 46px;
+    }
+    @include lg {
+      padding: 27px 16px 21px 20px;
+    }
+    @include md {
+      padding: 10px 10px 10px 10px;
+    }
+    @include sm {
+      padding: 30px 10px 30px 10px;
+    }
+  }
+  &-bg-img {
+    right: 0;
+    bottom: 0;
+  }
+  &-wrapper,&-wrapper-two {
+    margin-bottom: 40px;
+    @include sm {
+      margin-bottom: 25px;
+    }
+    @include md {
+      margin-bottom: 35px;
+    }
+
+    @include rmaxwd(1399) {
+      margin-right: 0;
+    }
+    .wuc-accordion-pra {
+      @include sm {
+        margin-top: 0;
+      }
+      visibility: hidden;
+      opacity: 0;
+      max-height: 0;
+      margin-top: 0;
+      transform: scaleY(0);
+      overflow: hidden;
+      transition: max-height 0.3s ease; 
+      @include transition;
+      p {
+        font-size: 18px;
+        @include transition;
+        @include sm {
+          font-size: 15px;
+        }
+        @include rmaxwd(1199) {
+          margin-top: 0;
+        }
+      }
+      &.active {
+        visibility: visible;
+        opacity: 1;
+        max-height: 100px;
+        margin-top: 30px;
+        transform: scaleY(1);
+        @include transition;
+        p {
+          @include transition;
+        }
+      }
+    }
+  }
+  &-title {
+    position: relative;
+    cursor: pointer;
+    h4 {
+      font-family: Gilroy-SemiBold;
+      font-size: 18px;
+      margin-bottom: 40px;
+      @include sm {
+        font-size: 16px;
+      }
+    }
+    .accordin-icon {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $gray;
+      border-radius: 50%;
+      @include transition;
+      @include sm {
+        text-align: end;
+      }
+      i {
+        font-size: 16px;
+        color: $white;
+        transform: rotate(-45deg);
+        @include transition;
+      }
+      &.active {
+        width: 54px;
+        height: 54px;
+        background-color: $primary-color;
+        @include transition;
+        i {
+          font-size: 28px;
+          color: $white;
+          @include transition;
+        }
+      }
+    }
+    &::after {
+      content: '';
+      background-color: rgba(255, 255, 255, 0.2);
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &-image-wrapper {
+    @include rmaxwd(992) {
+      display: none;
+    }
+  }
+  &.style-2 {
+    @include md {
+      padding-bottom: 7px;
+    }
+    &:last-child {
+      @include md {
+        padding-bottom: 10px;
+      }
+    }
+    .wuc-accordion {
+      &-title {
+        h4 {
+          margin-bottom: 0;
+          //styleName: H5;
+          font-family: Gilroy-Bold;
+          font-size: 22px;
+          font-weight: 400;
+          line-height: 27.24px;
+          text-align: left;
+          text-transform: uppercase;
+        }
+        &:after {
+          display: none;
+        }
+        span {
+          font-family: $body-font !important;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 29px;
+          letter-spacing: 0.3em;
+          text-align: end;
+
+          &:before {
+            display: none;
+          }
+          &.right-arrow {
+            &.active {
+              display: none;
+            }
+          }
+        }
+      }
+      &-wrapper {
+        margin-bottom: 35px;
+      }
+      &-pra {
+        &.active {
+          border-bottom: 1px solid $white;
+          margin-top: 30px;
+          padding-bottom: 47px;
+        }
+      }
+    }
+  }
+}
+.accordion-wrapper {
+  border-top: 1px solid $white;
+  padding-top: 60px;
+  @include rmaxwd(1399) {
+    flex-wrap: wrap;
+    margin-left: 0;
+    gap: 0;
+  }
+}

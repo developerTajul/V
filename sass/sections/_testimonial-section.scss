@@ -1,0 +1,305 @@
+.testimonial-area {
+  &.style-1 {
+    @include rmaxwd(991) {
+      padding-bottom: 40px;
+      padding-top: 40px;
+    }
+  }
+
+  &.style-2 {
+    @include sm {
+      padding-top: 60px;
+      padding-bottom: 58px;
+    }
+    @include md {
+      padding-top: 80px;
+      padding-bottom: 54px;
+    }
+    @include lg {
+      padding-top: 100px;
+      padding-bottom: 54px;
+    }
+    .section-title {
+      @include sm {
+        margin-bottom: 0;
+      }
+    }
+    .testimonial-slider-wrapper {
+      position: relative;
+      .slide-counter {
+        position: absolute;
+        bottom: 20px;
+        left: 100px;
+        @include rmaxwd(991) {
+          left: 12px;
+          bottom: 56px;
+        }
+      }
+    }
+    .testimonial-area-main-slider {
+      @include sm {
+        padding-bottom: 90px;
+      }
+      .slick-list {
+        @include rwd(1700) {
+          width: 1115px;
+          margin: 0 auto;
+        }
+      }
+      .slick-dots {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        li {
+          width: 25%;
+          border-bottom: 1px solid transparent;
+          @include transition;
+          &.slick-active {
+            border-bottom: 1px solid $white;
+            @include transition;
+          }
+          button {
+            width: 100%;
+            font-size: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &-img-content {
+    margin-top: -30px;
+
+    @include rmaxwd(1399) {
+      margin: 0 0 0 0;
+    }
+
+    &.style-2 {
+      margin-top: 0;
+    }
+
+    @include md {
+      margin-left: 0;
+    }
+  }
+
+  &-main-slider {
+    overflow: hidden;
+    @include rmaxwd(1199) {
+      margin: 0 0 0 0;
+    }
+  }
+
+  &-slider-wrapper {
+    display: flex;
+    background: #1a1717;
+    padding: 105px 119px 78px 50px;
+
+    @include rmaxwd(1705) {
+      padding: 105px 70px 105px 50px;
+    }
+
+    @include xxl {
+      padding: 100px 50px 100px 20px;
+    }
+
+    @include xml {
+      padding: 60px 10px 60px 10px;
+    }
+
+    @include lg {
+      padding: 20px 10px 20px 19px;
+    }
+
+    @include md {
+      padding: 60px 25px 60px 25px;
+    }
+
+    @include sm {
+      padding: 45px 5px 45px 5px;
+      display: block;
+    }
+
+    & .fast-slider {
+      width: 30%;
+
+      @include sm {
+        width: 100%;
+      }
+
+      & .slider-image {
+        margin-bottom: 50.5px;
+
+        @include sm {
+          margin-bottom: 20px;
+          padding-top: 30px;
+        }
+
+        & img {
+          max-width: 80px;
+          max-height: 80px;
+          border-radius: 50%;
+
+          @include xl {
+            max-width: 65px;
+            max-height: 65px;
+          }
+
+          @include sm {
+            max-width: 60px;
+            max-height: 60px;
+          }
+        }
+      }
+    }
+
+    & .second-slider {
+      width: 70%;
+      padding: 0 10px;
+
+      @include sm {
+        width: 100%;
+        padding: 0 5px;
+      }
+
+      .slider-wrapper {
+        .slider-pra {
+          p {
+            @include rmaxwd(1500) {
+              font-size: 12px;
+            }
+
+            @include sm {
+              font-size: 12px;
+            }
+          }
+        }
+
+        .slider-info {
+          .slider-info-text {
+            h5 {
+              color: #fff;
+
+              @include sm {
+                font-size: 16px;
+              }
+            }
+
+            span {
+              color: #b0b0b0;
+            }
+          }
+
+          span {
+            &::before {
+              font-size: 80px;
+              color: #484545;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .slick-center img {
+    margin-right: 100px;
+    @include transition;
+
+    @include xl {
+      margin-right: 70px;
+    }
+
+    @include lg {
+      margin-right: 65px;
+    }
+
+    @include sm {
+      margin: -30px 0 0 0;
+    }
+  }
+
+  &-main-slider-style-2 {
+    margin-top: 0px;
+    margin-right: -305px;
+    margin-left: 22px;
+
+    @include rmaxwd(1905) {
+      margin-right: -150px;
+    }
+
+    @include xxl {
+      margin-right: -152px;
+    }
+
+    @include xml {
+      margin-right: -52px;
+    }
+
+    @include xl {
+      margin-right: -41px;
+    }
+
+    @include lg {
+      margin-right: -28px;
+    }
+
+    @include md {
+      margin: 30px 0 0 0;
+    }
+
+    @include sm {
+      margin: 20px 0 0 0;
+    }
+  }
+}
+.testimonial-card {
+  display: flex !important;
+  align-items: center;
+  gap: 108px;
+  max-width: 1120px;
+  @include rmaxwd(991) {
+    gap: 24px;
+    flex-wrap: wrap;
+    padding: 0 12px;
+  }
+  @include lg {
+    padding: 0 12px;
+  }
+  @include xl {
+    padding: 0 12px;
+    max-width: none;
+  }
+  .image {
+    max-width: 112px;
+    height: 203px;
+    flex-shrink: 0;
+  }
+  .slider-pra {
+    p {
+      font-family: $body-font;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 40px;
+      color: $white;
+    }
+  }
+  .slider-info {
+    .slider-info-text {
+      h5 {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 27.24px;
+      }
+      span {
+        font-family: $body-font;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 29px;
+      }
+    }
+  }
+}

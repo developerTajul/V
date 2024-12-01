@@ -1,0 +1,56 @@
+.project-page{
+    &-card-part {
+        background: #1A1717;
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        @include sm{
+            padding: 20px 0 20px 0;
+        }
+        .about-card-bg-topographic{
+            top: 0;
+            right: 0;
+            animation: zoomInOut 2s 2s infinite;
+        }
+        @include md{
+            padding-bottom: 40px;
+        }
+    }
+    &-heading-part{
+        & h2{
+            @include md{
+                font-size: 38px;
+            }
+            @include sm{
+                font-size: 22px;
+            }
+        }
+        & a {
+            width: 82px;
+            height: 82px;
+            background: #EDBC5A;
+            border-radius: 50%;
+            line-height: 78px;
+            text-align: center;
+            @include md{
+                width: 60px;
+                height: 60px;
+                line-height: 58px;
+            }
+            @include sm{
+                width: 45px;
+                height: 45px;
+                line-height: 42px;
+            }
+        }
+        & span {
+            font-family: Gilroy-Light;
+        }
+    }
+    &-inner-img{
+        @include sm{
+            width: 30%;
+        }
+    }
+}
+

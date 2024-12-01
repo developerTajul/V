@@ -1,0 +1,121 @@
+html {
+  scroll-behavior: smooth;
+}
+.w-img {
+  & img {
+    width: 100%;
+  }
+}
+.m-img {
+  & img {
+    max-width: 100%;
+  }
+}
+
+.fix {
+  overflow: hidden;
+}
+.clear {
+  clear: both;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index-11 {
+  z-index: 11;
+}
+.z-index-99 {
+  z-index: 99;
+}
+
+.overflow-y-visible {
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+.overflow-x-visible {
+  overflow-x: visible;
+  overflow-y: hidden;
+}
+
+.p-relative {
+  position: relative;
+}
+.p-absolute {
+  position: absolute;
+}
+.body-black {
+  background: #131313;
+}
+.body-primary {
+  background: $primary-color;
+}
+.footer-bg {
+  background: $low-black;
+}
+.width-100 {
+  width: 100%;
+}
+
+.mb-140 {
+  @include lg {
+    margin-bottom: 80px;
+  }
+  @include md {
+    margin-bottom: 60px;
+  }
+  @include sm {
+    margin-bottom: 60px;
+  }
+}
+.pb-140 {
+  @include xl {
+    padding-bottom: 120px;
+  }
+  @include lg {
+    padding-bottom: 100px;
+  }
+  @include md {
+    padding-bottom: 80px;
+  }
+  @include sm {
+    padding-bottom: 60px;
+  }
+}
+.mt-140 {
+  @include lg {
+    margin-top: 100px;
+  }
+  @include md {
+    margin-top: 80px;
+  }
+  @include sm {
+    margin-top: 60px;
+  }
+}
+.pt-140 {
+  @include xl {
+    padding-top: 120px;
+  }
+  @include lg {
+    padding-top: 100px;
+  }
+  @include md {
+    padding-top: 80px;
+  }
+  @include sm {
+    padding-top: 60px;
+  }
+}
+.progress-circle {
+  .progress {
+    stroke: $primary-color;
+    stroke-dasharray: 251.2;
+    stroke-dashoffset: 251.2;
+    animation: progress-animation 2s linear forwards;
+    &.progress-2 {
+      stroke-dasharray: 265.2;
+    }
+  }
+}

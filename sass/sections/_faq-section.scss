@@ -1,0 +1,65 @@
+.faq-area {
+  @include xl {
+    padding-top: 120px;
+  }
+  @include lg {
+    padding-top: 100px;
+  }
+  @include md {
+    padding-top: 80px;
+  }
+  @include sm {
+    padding-top: 60px;
+  }
+  &-heading-part {
+    @include sm {
+      padding-left: 0;
+    }
+    & h2 {
+      text-transform: uppercase;
+      @include md {
+        font-size: 38px;
+      }
+
+      @include sm {
+        font-size: 22px;
+        line-height: 83px;
+      }
+    }
+
+    & a {
+      width: 82px;
+      height: 82px;
+      background: #edbc5a;
+      border-radius: 50%;
+      line-height: 78px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        font-size: 20px;
+        transform: rotate(-25deg);
+      }
+
+      @include md {
+        width: 60px;
+        height: 60px;
+        line-height: 58px;
+      }
+
+      @include sm {
+        width: 45px;
+        height: 45px;
+        line-height: 42px;
+      }
+    }
+
+    & span {
+      font-family: Gilroy-Light;
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 60px;
+    }
+  }
+}

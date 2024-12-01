@@ -1,0 +1,247 @@
+.image-card-area {
+  &.style-2 {
+    @include sm {
+      padding-top: 80px;
+    }
+    @include md {
+      padding-top: 100px;
+    }
+    .image-card-wrapper {
+      gap: 30px;
+      .image-card {
+        &.style-2 {
+          max-width: 890px;
+          @include lg {
+            max-width: 500px;
+          }
+          @include  xl {
+            max-width: 750px;
+          }
+        }
+      }
+    }
+  }
+  .image-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    // grid-template-columns: repeat(4, 1fr);
+    max-width: 1910px;
+    @include rmaxwd(991) {
+      gap: 30px;
+    }
+  }
+  .image-card {
+    position: relative;
+    flex-shrink: 0;
+    @include rmaxwd(991) {
+      flex-shrink: unset;
+    }
+    &:hover {
+      .content-wrapper {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    .image {
+      height: 100%;
+      img {
+        height: 100%;
+      }
+    }
+    .content-wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      visibility: hidden;
+      opacity: 0;
+      @include transition;
+      .icon {
+        margin-left: -35px;
+      }
+      .content {
+        .title {
+          background-color: $black;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 24px;
+          padding: 10px 20px;
+        }
+        .desc {
+          font-family: $body-font;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 24px;
+          background-color: $black;
+          margin-top: 5px;
+          padding: 5px 20px;
+          color: $white;
+        }
+      }
+    }
+    &.style-1 {
+      max-width: 465px;
+      max-height: 467px;
+    }
+    &.style-2 {
+      max-width: 950px;
+      max-height: 467px;
+      @include lg {
+        max-width: 510px;
+      }
+      @include xl {
+        max-width: 510px;
+      }
+    }
+    &.style-3 {
+      max-width: 488px;
+      max-height: 467px;
+      @include xl {
+        max-width: 600px;
+        max-height: 550px;
+        width: 600px;
+        height: 550px;
+        flex-shrink: 0;
+      }
+      .image {
+        @include xl {
+          width: 600px;
+          height: 550px;
+        }
+        img {
+          @include xl {
+            width: 100%;
+          }
+        }
+      }
+    }
+    &.style-4 {
+      max-width: 465px;
+      max-height: 467px;
+    }
+    &.style-5 {
+      position: relative;
+      border-radius: 60px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 66px;
+      }
+      .square-1 {
+        position: absolute;
+        background-color: $black;
+        top: 0;
+        right: 0;
+        width: 255px;
+        height: 255px;
+        border-bottom-left-radius: 60px;
+        @include sm {
+          display: none;
+        }
+        @include md {
+          width: 120px;
+          height: 120px;
+        }
+        @include lg {
+          width: 120px;
+          height: 120px;
+        }
+        @include xl {
+          width: 140px;
+          height: 140px;
+        }
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+          width: 73px;
+          height: 50px;
+        }
+        &:before {
+          left: -50px;
+          top: 50px;
+          background: #141414;
+          transform: translateY(-100%) rotate(360deg);
+          z-index: 2;
+          clip-path: path(
+            'M0,0 Q50,0 50,33 L50,350 Q50,400 0,400 L750,400 Q800,400 800,350 L800,50 Q800,0 750,0 Z'
+          );
+          @include md {
+            top: 48px;
+          }
+        }
+        &:after {
+          right: 50px;
+          bottom: -50px;
+          background: $black;
+          transform: translateX(100%) rotate(0deg);
+          z-index: 2;
+          clip-path: path(
+            'M0,0 Q50,0 50,33 L50,350 Q50,400 0,400 L750,400 Q800,400 800,350 L800,50 Q800,0 750,0 Z'
+          );
+          @include md {
+            bottom: -48px;
+          }
+        }
+      }
+    }
+    &.style-6 {
+      max-width: 990px;
+      max-height: 1100px;
+      @include rwd(1400) {
+        width: 990px;
+        height: 1100px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &.style-7 {
+      max-width: 960px;
+      max-height: 872px;
+      @include rwd(1400) {
+        width: 960px;
+        height: 872px;
+      }
+      @include rmaxwd(1399) {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &.style-8 {
+      max-width: 552px;
+      max-height: 613px;
+      width: 552px;
+      height: 613px;
+      @include sm {
+        max-width: 350px;
+        max-height: 400px;
+      }
+      @include md {
+        max-width: 330px;
+        max-height: 400px;
+      }
+      @include lg {
+        max-width: 450px;
+        max-height: 500px;
+      }
+      @include xl {
+        max-width: 350px;
+        max-height: 400px;
+      }
+      .image{
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.art-gallery {
+  position: relative;
+  @include sm {
+    padding-top: 60px;
+  }
+
+  &-bg-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, 50%);
+    @include rmaxwd(1399) {
+      display: none;
+    }
+  }
+  &-inner {
+    gap: 90px;
+    align-items: center;
+    justify-content: center;
+    @include rmaxwd(991) {
+      gap: 30px;
+    }
+  }
+  &-image {
+    background-color: azure;
+    @include md {
+      width: 400px;
+    }
+  }
+  &-content {
+    @include sm {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  &-border {
+    width: 1px;
+    height: 301px;
+    background-color: $white;
+    margin-left: 15px;
+    @include sm {
+      margin-left: 0;
+      height: 150px;
+    }
+  }
+  &-content-inner {
+    @include sm {
+      margin-top: 20px;
+    }
+    @include md {
+      margin-top: 30px;
+    }
+    h5 {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    h6 {
+      color: $secondary-color;
+    }
+  }
+}

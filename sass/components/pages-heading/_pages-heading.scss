@@ -1,0 +1,84 @@
+.pages-heading{
+    
+    @include rmaxwd(1399){
+        margin: 0 30px;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        width: 508px;
+        height: 508px; 
+        left: -106px;
+        bottom: -170px;
+        background: rgba(237, 188, 90, 0.7);
+        filter: blur(200px);
+        animation: zoomInOut 5s 2s infinite;
+        z-index: 0;
+        border-radius: 508px;
+        @include sm{
+            width: 270px;
+        }
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        width: 381px;
+        height: 381px;
+        right:0;
+        top: -162px;
+        background: rgba(237, 188, 90, 0.7);
+        filter: blur(200px);
+        animation: zoomInOut 5s 2s infinite;
+        z-index: 0;
+        border-radius: 381px;
+    }
+    &-image{
+        text-align: center;
+        img{
+            border-radius: 15px;
+        }
+    }
+    &-text{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        &.style-2{
+            span{
+                @include sm{
+                    font-size: 9px;
+                }
+            }
+            h2{
+                @include sm{
+                    font-size: 10px;
+                }
+            }
+        }
+        span{
+            @include rmaxwd(480) {
+                font-size: 14px;
+            }
+        }
+        h2{
+            text-transform: uppercase;
+            @include xl{
+                font-size: 36px;
+            }
+            @include lg{
+                font-size: 28px;
+            }
+            @include md{
+                font-size: 24px;
+            }
+            @include sm{
+                font-size: 22px;
+            }
+            @include rmaxwd(480) {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+

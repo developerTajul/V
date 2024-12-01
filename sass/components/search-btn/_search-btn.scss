@@ -1,0 +1,100 @@
+.search-menu-container {
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  width: 700px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transform: scaleY(0);
+  transition: all 0.5s ease 0s;
+  &.search-menu-active{
+    visibility: visible;
+    opacity: 1;
+    left: 50%;
+    top: 50%;
+    transform: scaleY(1);
+    transform: translate(-50%, -50%);
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    background: #333333;
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .input-field {
+    flex: 1;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    background: #333333;
+    color: $white;
+    transition: border-color 0.3s;
+
+    &:focus {
+      border-bottom: 2px solid $white;
+    }
+  }
+
+  .submit-btn {
+    padding: 10px;
+    border: none;
+    background: none;
+    color: $white;
+    font-size: 22px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .close-btn {
+    margin-left: 10px;
+    padding: 10px;
+    border: none;
+    background: none;
+    color: $white;
+    font-size: 32px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.search-menu-overlay{
+  position: fixed;
+  top: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: right center;
+  transition: all 0.5s ease 0s;
+  &.search-menu-overlay-active{
+      visibility: visible;
+      opacity: 1;
+      right: 0;
+      top: 0;
+      transform: scaleY(1);
+  }
+}

@@ -1,0 +1,201 @@
+.about-page {
+  // .wcu-area-page{
+  //     @include rmaxwd(575){
+  //         display: none;
+  //     }
+  //     position: relative;
+  //     .wcu-area-page-circle-img {
+  //         max-width: 613px;
+  //         max-height: 613px;
+  //         margin-left: -250px;
+  //         margin-right: 71px;
+  //         animation: rotated_circle 30s infinite;
+  //         @include xxl{
+  //             margin-left: -122px;
+  //             margin-right: 0;
+  //             max-width: 500px;
+  //             max-height: 500px;
+  //         }
+  //         @include xml{
+  //             margin-left: -39px;
+  //             margin-right: 0;
+  //             max-width: 450px;
+  //             max-height: 450px;
+  //             margin-top: 120px;
+  //         }
+  //         @include xl{
+  //             margin-left: -29px;
+  //             margin-right: 0;
+  //             max-width: 370px;
+  //             max-height: 370px;
+  //             margin-top: 120px;
+  //         }
+  //         @include lg{
+  //             margin-left: 0;
+  //             margin-right: 0;
+  //             max-width: 370px;
+  //             max-height: 370px;
+  //             display: block;
+  //             margin: 0 auto;
+  //         }
+  //         @include md{
+  //             margin-left: 0;
+  //             margin-right: 0;
+  //             max-width: 370px;
+  //             max-height: 370px;
+  //             display: block;
+  //             margin: 0 auto;
+  //         }
+  //         @include sm{
+  //             margin-left: 0;
+  //             margin-right: 0;
+  //             max-width: 370px;
+  //             max-height: 370px;
+  //             display: block;
+  //             margin: 0 auto;
+  //         }
+  //     }
+  //     &-img-content{
+  //         margin-top: -396px;
+  //         margin-left: -46px;
+  //         @include xxl{
+  //             margin-top: -351px;
+  //             margin-left: 31px;
+  //         }
+  //         @include xml{
+  //             margin-top: -326px;
+  //             margin-left: 98px;
+  //         }
+  //         @include xl{
+  //             margin-top: -260px;
+  //             margin-left: 90px;
+  //         }
+  //         @include lg{
+  //             margin-top: 0;
+  //             margin-left: 0;
+  //             position: absolute;
+  //             margin-left: 0;
+  //             bottom: 125px;
+  //             left: 400px;
+  //         }
+  //         @include md{
+  //             margin-top: 0;
+  //             margin-left: 0;
+  //             position: absolute;
+  //             margin-left: 0;
+  //             bottom: 117px;
+  //             left:280px;
+  //         }
+  //         @include sm{
+  //             margin-top: 0;
+  //             margin-left: 0;
+  //             position: absolute;
+  //             margin-left: 0;
+  //             bottom: 117px;
+  //             left:200px;
+  //         }
+  //         img{
+  //             @include xl{
+  //                 max-width: 50%;
+  //             }
+  //             @include lg{
+  //                 max-width: 60%;
+  //             }
+  //             @include md{
+  //                 max-width: 60%;
+  //             }
+  //             @include sm{
+  //                 max-width: 60%;
+  //             }
+  //         }
+  //         h3{
+  //             -webkit-text-stroke-width: 1px;
+  //             -webkit-text-stroke-color: $white;
+  //             color: transparent;
+  //             font-size: 35px;
+  //             letter-spacing: 15.75px;
+  //             text-transform: uppercase;
+  //             margin-left: 9px;
+  //             @include xl{
+  //                 font-size: 20px;
+  //             }
+  //             @include lg{
+  //                 font-size: 20px;
+  //             }
+  //             @include md{
+  //                 font-size: 20px;
+  //             }
+  //             @include sm{
+  //                 font-size: 20px;
+  //             }
+  //         }
+  //     }
+  // }
+
+  .contact-us-area.style-2 .faq-area-heading {
+    @include rmaxwd(991) {
+      padding-top: 10px;
+    }
+    @include lg {
+      padding-top: 30px;
+    }
+    .faq-area-heading-part h2 {
+      @include rmaxwd(991) {
+        line-height: 41px;
+      }
+      @include xl {
+        font-size: 58px;
+      }
+      span {
+        @include xl {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+  .text-marque-area {
+    @include sm {
+      padding-top: 60px;
+    }
+    @include md {
+      padding-top: 80px;
+    }
+    @include lg {
+      padding-top: 100px;
+    }
+    @include xl {
+      padding-top: 120px;
+    }
+  }
+  .counter-area {
+    @include sm {
+      padding-top: 45px;
+      padding-bottom: 40px;
+    }
+    @include md {
+      padding-top: 60px;
+      padding-bottom: 70px;
+    }
+    @include lg {
+      padding-top: 60px;
+      padding-bottom: 90px;
+    }
+    @include xl {
+      padding-top: 80px;
+      padding-bottom: 110px;
+    }
+  }
+  .footer-area {
+    &-quick-menu {
+      @include sm {
+        padding-top: 24px;
+      }
+      @include md {
+        padding-top: 60px;
+      }
+      @include lg {
+        padding-top: 92px;
+      }
+    }
+  }
+}

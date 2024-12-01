@@ -1,0 +1,54 @@
+.brand-marque-area {
+  &.style-2 {
+    margin-bottom: 0;
+    &.brand-marque-area-primary {
+      margin-bottom: 0;
+    }
+    .brand-marque-wrapper {
+      .single-img-marque {
+        &:nth-child(even) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  &.brand-marque-area-primary {
+    overflow: hidden;
+    position: relative;
+    z-index: 11;
+  }
+
+  & .brand-marque-wrapper {
+    &.first-text-marque {
+    }
+
+    .single-img-marque {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 430.75px;
+      height: 100px;
+      background: #1d1d1d;
+      margin: 0 20px;
+      border: 1px solid #ffffff1a;
+
+      @include lg {
+        width: 350px;
+        height: 80px;
+      }
+
+      @include md {
+        width: 300px;
+        height: 80px;
+      }
+
+      @include sm {
+        width: 200px;
+        height: 70px;
+      }
+      &:nth-child(even) {
+        margin-top: 50px;
+      }
+    }
+  }
+}

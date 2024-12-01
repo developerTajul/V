@@ -1,0 +1,188 @@
+.gallery-area {
+  &.style-1 {
+    position: relative;
+    @include xl {
+      padding-top: 64px;
+    }
+    @include lg {
+      padding-top: 54px;
+    }
+    @include md {
+      padding-top: 44px;
+    }
+    @include sm {
+      padding-top: 34px;
+    }
+    .gallery-area-image-1 {
+      max-width: 1720px;
+      max-height: 810px;
+      clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+    }
+    .gallery-area-image-2 {
+      max-width: 440px;
+      max-height: 465px;
+      position: absolute;
+      bottom: -100px;
+      right: 0;
+      @include sm {
+        max-width: 140px;
+        max-height: 165px;
+        bottom: -40px;
+      }
+      @include md {
+        max-width: 220px;
+        max-height: 200px;
+        bottom: 0;
+      }
+      @include lg {
+        max-width: 280px;
+        max-height: 250px;
+        bottom: 0;
+      }
+      @include xl {
+        max-width: 280px;
+        max-height: 250px;
+        bottom: 0;
+      }
+    }
+  }
+  &-bg-shape {
+    top: -22px;
+    left: 20px;
+    z-index: 999;
+
+    @include sm {
+      display: none;
+    }
+  }
+
+  &-wrapper {
+    @include rmaxwd(1800) {
+      margin-right: 0;
+      margin: 0 20px;
+    }
+  }
+
+  &-info {
+    @include sm {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  &-big-img {
+    @include lg {
+      margin-bottom: 30px;
+    }
+
+    @include md {
+      margin-bottom: 26px;
+    }
+
+    @include sm {
+      margin-bottom: 16px;
+    }
+  }
+
+  .shape-img {
+    @include lg {
+      width: 150px;
+    }
+
+    @include md {
+      width: 150px;
+    }
+  }
+
+  &-text {
+    & h2 {
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: var(--Primary, #edbc5a);
+      font-size: 80px;
+      letter-spacing: 16px;
+      text-transform: uppercase;
+      color: transparent;
+      margin-bottom: 22px;
+
+      @include xl {
+        font-size: 40px;
+      }
+
+      @include lg {
+        font-size: 28px;
+        letter-spacing: 8px;
+      }
+
+      @include md {
+        font-size: 40px;
+        letter-spacing: 7px;
+        margin-bottom: 15px;
+      }
+    }
+
+    & h6 {
+      font-size: 47px;
+      letter-spacing: 20.5px;
+      text-transform: uppercase;
+      font-family: Gilroy-Light;
+
+      @include xl {
+        font-size: 30px;
+        letter-spacing: 12.5px;
+      }
+
+      @include lg {
+        font-size: 24px;
+        letter-spacing: 10.5px;
+      }
+
+      @include md {
+        font-size: 20px;
+        letter-spacing: 7px;
+      }
+    }
+  }
+
+  &-image-shape {
+    & .shape-1 {
+      left: 18px;
+      top: 0;
+
+      @include xl {
+        max-width: 52%;
+      }
+
+      @include lg {
+        max-width: 48%;
+      }
+
+      @include sm {
+        display: none;
+      }
+    }
+
+    & .shape-2 {
+      margin-left: 70px;
+
+      @include xl {
+        max-width: 52%;
+      }
+
+      @include lg {
+        max-width: 48%;
+      }
+
+      @include sm {
+        display: none;
+      }
+    }
+  }
+
+  &-image-none {
+    @include sm {
+      display: none;
+    }
+  }
+}

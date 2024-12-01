@@ -1,0 +1,191 @@
+.team-secondary-partner {
+  &.blog-details-form {
+    .form-heading {
+      margin-bottom: 60px;
+      .title {
+        margin-bottom: 30px;
+      }
+      .desc {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 29px;
+        margin-bottom: 0;
+      }
+    }
+  }
+  &.contact-page-form {
+    @include md {
+      padding: 25px 20px 25px 20px;
+    }
+    .form-heading {
+      h3 {
+        @include md {
+          font-size: 31px;
+        }
+        @include sm {
+          font-size: 31px;
+        }
+      }
+    }
+    .contact-form {
+      .page-btn {
+        a {
+          @include md {
+            padding: 10px 17px 11px 35px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  .section-title {
+    p {
+      @include sm {
+        font-size: 15px;
+      }
+    }
+  }
+}
+.contact-form {
+  form {
+    display: flex;
+    flex-direction: column;
+
+    .contract-group {
+      display: flex;
+      justify-content: space-between;
+      @include md {
+        display: block;
+      }
+      @include sm {
+        display: block;
+      }
+
+      .input-col,
+      .textarea-field {
+        width: calc(50% - 24px);
+        margin-bottom: 40px;
+        &.w-full {
+          width: 100%;
+        }
+        @include md {
+          width: calc(100% - 20px);
+          margin-bottom: 35px;
+        }
+        @include sm {
+          width: calc(100% - 20px);
+          margin-bottom: 20px;
+        }
+        label {
+          display: block;
+          color: $secondary-color;
+          font-family: Rubik;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 29px;
+        }
+
+        input,
+        select,
+        textarea {
+          width: 100%;
+          border: none;
+          border-radius: 0;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+          font-size: 14px;
+          transition: border-color 0.3s ease;
+          background-color: transparent;
+          box-sizing: border-box;
+          color: $white;
+          font-size: 18px;
+
+          &:focus {
+            outline: none;
+            border-color: $white;
+          }
+        }
+
+        textarea {
+          min-height: 80px;
+        }
+
+        select {
+          appearance: none;
+          background-image: url('../../images/icon/selector-arrow.svg');
+          background-repeat: no-repeat;
+          background-position-x: calc(100% - 10px);
+          background-position-y: center;
+          padding-right: 30px;
+          color: $white;
+
+          option {
+            &.selector-menu {
+              background: $black;
+            }
+          }
+        }
+      }
+      .textarea-field {
+        margin-bottom: 40px;
+      }
+
+      &.full-row {
+        flex-direction: column;
+
+        textarea {
+          width: 100%;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+          border-radius: 0;
+          font-size: 14px;
+          transition: border-color 0.3s ease;
+          min-height: 105px;
+          background-color: transparent;
+          box-sizing: border-box;
+          color: $white;
+          font-size: 18px;
+          @include sm {
+            min-height: 90px;
+          }
+          @include md {
+            min-height: 90px;
+          }
+          &:focus {
+            outline: none;
+            border-color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+.page-btn {
+  @include md {
+    margin-top: 35px;
+  }
+  @include sm {
+    margin-top: 24px;
+  }
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    color: $black;
+    font-family: $body-font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    background-color: $white;
+    border-radius: 50px;
+    @include sm {
+      font-size: 22px;
+      padding: 12px 20px 12px 20px;
+    }
+    &:hover {
+      background: $primary-color;
+    }
+  }
+}

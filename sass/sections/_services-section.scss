@@ -1,0 +1,115 @@
+.services-area {
+    &-card-wrapper {
+        width: 100%;
+        position: relative;
+        @include sm{
+            margin-bottom: 40px;
+        }
+        &:hover{
+            span{
+                &::before{
+                    color: $white;
+                }
+            }
+            p{
+            visibility: visible;
+            max-height: 100px;
+            opacity: 1;
+            transition: transform 0.5s ease-out, max-height 0.5s ease-out;
+            }
+            a{
+                visibility: visible;
+                @include lg{
+                    margin-top: 18px;
+                }
+            }
+            .card-change-img-1{
+                padding-top: 0;
+                height: 331px;
+                @include md{
+                    height: 272px;
+                }
+            }
+        }
+    }
+    &-card-content {
+        width: 270px;
+        background: #1A1717;
+        padding: 15px 15px 23px 30px;
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        @include lg{
+            width: 230px;
+        }
+        @include md{
+            width: 185px;
+            padding: 5px 15px 5px 30px;
+        }
+    }
+    &-card-element{
+        span{
+            font-size: 35px;
+            margin-top: 32px;
+            &::before{
+                color: $primary-color;
+            }
+        }
+        @include lg{
+            margin-bottom: 19px;
+        }
+        h2{
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgba(255, 255, 255, 0.15);
+            font-family: Gilroy-Medium;
+            color: transparent;
+        }
+    }
+    &-card-text{
+        h4{
+            font-family: Gilroy-Medium;
+            font-size: 18px;
+            margin-bottom: 10px;
+            @include lg{
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+            @include md{
+                font-size: 12px;
+                margin-bottom: 12px;
+            }
+        }
+        p{
+            visibility: hidden;
+            max-height: 0;
+            opacity: 0;
+            transition: transform 0.5s ease-out, max-height 0.5s ease-out;
+            @include md{
+                font-size: 10px;
+                line-height: 22px;
+            }
+        }
+    }
+    &-card-btn{
+        a{
+            width: 42px;
+            height: 42px;
+            background: $primary-color;
+            display: inline-block;
+            text-align: center;
+            line-height: 42px;
+            border-radius: 50%;
+            visibility: hidden;
+            transition: all 0.5s ease-out;
+        }
+    }
+    &-card-img{
+        .card-change-img-1{
+            padding-top: 142px;
+            transition: all 0.5s ease-out;
+            @include sm{
+                transition: all 0s ease-out;
+            }
+        }
+    }
+}
