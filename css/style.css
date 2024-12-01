@@ -1,8 +1,8 @@
 /**
  * Stylesheet:  style.css
- * Theme:       CreBiz - Web Design Agency HTML Template
+ * Theme:       Zylo - Web Design Agency HTML Template
  * Version:     1.0
- * Author:     	CreBiz
+ * Author:     	Zylo
  * 
  */
 /* Table of contents
@@ -133,9 +133,9 @@ h4 {
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
-  line-height: 29px;
+  line-height: normal;
 }
 
 h6 {
@@ -344,24 +344,6 @@ input.theme-btn .desc {
   font-weight: 400;
   line-height: 29px;
   color: #ffffff;
-}
-.theme-btn:hover,
-.wp-block-loginout a:hover,
-input.theme-btn:hover {
-  color: #fff;
-  border-color: #0000ff;
-  background-color: #0000ff;
-}
-.theme-btn:hover:before,
-.wp-block-loginout a:hover:before,
-input.theme-btn:hover:before {
-  width: 150%;
-  background-color: #0000ff;
-  transition: all 0.5s ease-out;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
 }
 .theme-btn:focus,
 .wp-block-loginout a:focus,
@@ -19151,6 +19133,50 @@ html {
   .award-and-event-area .bg-img {
     display: none;
   }
+}
+
+.process-area {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+.process-area .process-card {
+  flex: 1;
+  padding: 12px 30px;
+  position: relative;
+  z-index: 3;
+  width: 315px;
+  max-height: 100px;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.process-area .process-card:hover, .process-area .process-card.active {
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+@media (max-width: 1399px) {
+  .process-area .process-card {
+    width: auto;
+  }
+}
+.process-area .process-card .number {
+  color: #ffffff;
+}
+.process-area .process-card .title {
+  padding-top: 10px;
+  margin-top: 10px;
+  border-top: 1px solid #ffffff;
 }
 
 @media (max-width: 991px) {

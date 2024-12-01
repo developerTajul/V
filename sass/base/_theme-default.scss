@@ -78,9 +78,9 @@ h4 {
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
-  line-height: 29px;
+  line-height: normal;
 }
 
 h6 {
@@ -291,33 +291,7 @@ input.theme-btn {
     line-height: 29px;
     color: $white;
   }
-  //i {
-  //  display: inline-flex;
-  //  align-items: center;
-  //  justify-content: center;
-  //}
-  // &:before {
-  //   position: absolute;
-  //   left: -20%;
-  //   top: 0;
-  //   height: 100%;
-  //   width: 0;
-  //   content: "";
-  //   background-color: $blue-color;
-  //   z-index: -1;
-  //   transform: skew(45deg);
-  //   @include transition;
-  // }
   &:hover {
-    color: #fff;
-    border-color: $blue-color;
-    background-color: $blue-color;
-
-    &:before {
-      width: 150%;
-      background-color: $blue-color;
-      @include transition;
-    }
   }
 
   &:focus {
