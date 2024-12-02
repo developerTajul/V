@@ -59,4 +59,10 @@
   .gap-#{1 * $i} {
     gap: 1px * $i;
   }
+  .gap-x-#{1 * $i} {
+    column-gap: 1px * $i;
+  }
+  .gap-y-#{1 * $i} {
+    row-gap: 1px * $i;
+  }
 }

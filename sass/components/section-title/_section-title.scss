@@ -5,57 +5,57 @@
   @include sm {
     margin-bottom: 30px;
   }
-  &.style-1 {
-    @include sm {
-      flex-direction: column;
-      gap: 10px;
-    }
-    @include md {
-      margin-bottom: 0;
-      padding-bottom: 48px;
-      flex-direction: column;
-      gap: 0;
-    }
-    & h2 {
-      font-family: $heading-font;
-      font-size: 75px;
-      font-weight: 400;
-      line-height: 92.85px;
-      text-align: left;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  @include sm {
+    flex-direction: column;
+    gap: 10px;
+  }
+  & h2 {
+    color: $black;
 
-      @include lg {
-        font-size: 45px;
-        line-height: 75px;
-      }
+    @include lg {
+      font-size: 45px;
+      line-height: 75px;
+    }
+    @include rmaxwd(991) {
+      font-size: 35px;
+      line-height: 52px;
+    }
+    br {
       @include rmaxwd(991) {
-        font-size: 35px;
-        line-height: 52px;
-      }
-      br {
-        @include rmaxwd(991) {
-          display: none;
-        }
+        display: none;
       }
     }
-    .desc {
+  }
+  .desc {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    text-transform: capitalize;
+  }
+  &-short {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: $primary-color;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-top: -5px;
+    @include sm {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+    p {
+      margin-bottom: 0;
       font-size: 16px;
       font-style: normal;
-      font-weight: 400;
-      line-height: 29px;
-      text-transform: capitalize;
-    }
-    span {
-      color: #edbc5a;
-      font-weight: 300;
-      letter-spacing: 3.52px;
+      font-weight: 600;
+      line-height: 29px; /* 181.25% */
+      color: $primary-color;
       text-transform: uppercase;
-      display: block;
-      white-space: nowrap;
-      margin-top: -5px;
-      @include sm {
-        font-size: 16px;
-        margin-bottom: 0;
-      }
     }
   }
   &.style-2 {
