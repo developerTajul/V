@@ -21025,32 +21025,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 430.75px;
-  height: 100px;
-  background: #1d1d1d;
-  margin: 0 20px;
-  border: 1px solid rgba(255, 255, 255, 0.1019607843);
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .brand-marque-area .brand-marque-wrapper .single-img-marque {
-    width: 350px;
-    height: 80px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .brand-marque-area .brand-marque-wrapper .single-img-marque {
-    width: 300px;
-    height: 80px;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .brand-marque-area .brand-marque-wrapper .single-img-marque {
-    width: 200px;
-    height: 70px;
-  }
-}
-.brand-marque-area .brand-marque-wrapper .single-img-marque:nth-child(even) {
-  margin-top: 50px;
+  width: 163px;
+  height: 53px;
 }
 
 .services-area-card-wrapper {
