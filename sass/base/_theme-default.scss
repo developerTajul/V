@@ -273,7 +273,7 @@ input.theme-btn {
     font-size: 14px;
   }
 
-  .icon {
+  &-icon {
     width: 70px;
     height: 70px;
     border-radius: 50px;
@@ -281,8 +281,9 @@ input.theme-btn {
     align-items: center;
     justify-content: center;
     border: 1px solid $white;
+    @include transition;
   }
-  .desc {
+  &-desc {
     margin-bottom: 0;
     font-family: $body-font;
     font-size: 18px;
@@ -290,12 +291,35 @@ input.theme-btn {
     font-weight: 400;
     line-height: 29px;
     color: $white;
+    @include transition;
   }
   &:hover {
+    .icon {
+      background-color: $primary-color;
+      border-color: $primary-color;
+      @include transition;
+    }
+    .desc {
+      color: $primary-color;
+      @include transition;
+    }
   }
 
   &:focus {
     color: $white;
+  }
+  &.style-2 {
+    .theme-btn-icon {
+      border-color: $black;
+      svg {
+        path {
+          fill: $black;
+        }
+      }
+    }
+    .theme-btn-desc {
+      color: $black;
+    }
   }
 }
 

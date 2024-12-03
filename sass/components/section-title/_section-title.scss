@@ -59,17 +59,11 @@
     }
   }
   &.style-2 {
-    text-align: center;
     & h2 {
-      @include lg {
-        font-size: 35px;
-      }
-      @include md {
-        font-size: 30px;
-      }
-      @include sm {
-        font-size: 25px;
-      }
+      color: $white;
+    }
+    .desc {
+      color: $white;
     }
     span {
       color: #edbc5a;
