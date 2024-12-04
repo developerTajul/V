@@ -396,6 +396,29 @@ input.theme-btn.style-2 .theme-btn-icon svg path {
 input.theme-btn.style-2 .theme-btn-desc {
   color: #1c1a1d;
 }
+.theme-btn.style-3,
+.wp-block-loginout a.style-3,
+input.theme-btn.style-3 {
+  padding: 26px 32px;
+  background-color: #b69974;
+}
+.theme-btn.style-3 .theme-btn-icon,
+.wp-block-loginout a.style-3 .theme-btn-icon,
+input.theme-btn.style-3 .theme-btn-icon {
+  width: auto;
+  height: auto;
+  border-color: transparent;
+}
+.theme-btn.style-3 .theme-btn-icon i,
+.wp-block-loginout a.style-3 .theme-btn-icon i,
+input.theme-btn.style-3 .theme-btn-icon i {
+  font-size: 32px;
+}
+.theme-btn.style-3 .theme-btn-desc,
+.wp-block-loginout a.style-3 .theme-btn-desc,
+input.theme-btn.style-3 .theme-btn-desc {
+  color: #ffffff;
+}
 
 .simple-btn {
   color: #1c1a1d;
@@ -21894,6 +21917,129 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 29px;
+}
+
+.accordin-card {
+  position: relative;
+  max-height: 184px;
+  padding: 10px 0;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.accordin-card:hover .bg-img {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.accordin-card:hover .title-wrapper .image-wrapper {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.accordin-card:hover .title-wrapper .inner-wrapper .icon {
+  left: -430px;
+  background-color: #b69974;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.accordin-card:hover .title-wrapper .inner-wrapper .icon svg path {
+  stroke: #ffffff;
+}
+.accordin-card:hover .title-wrapper .inner-wrapper .title {
+  color: #ffffff;
+}
+.accordin-card:hover .desc {
+  color: #ffffff;
+}
+.accordin-card:hover .theme-btn {
+  transform: translateX(-30px) rotate(-10deg);
+}
+.accordin-card:hover .theme-btn .theme-btn-icon {
+  border-color: #b69974;
+}
+.accordin-card:hover .theme-btn .theme-btn-icon svg path {
+  fill: #b69974;
+}
+.accordin-card .bg-img {
+  position: absolute;
+  visibility: hidden;
+  top: 10px;
+  left: 0;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.accordin-card .bg-img:before {
+  content: "";
+  background-color: rgba(28, 26, 29, 0.8);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.accordin-card .title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+.accordin-card .title-wrapper .image-wrapper {
+  max-width: 396px;
+}
+.accordin-card .title-wrapper .inner-wrapper {
+  position: relative;
+}
+.accordin-card .title-wrapper .inner-wrapper .icon {
+  width: 78px;
+  height: 78px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  background-color: #ffffff;
+  position: absolute;
+  left: -100px;
+  transform: translate(-17%, -29%);
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.accordin-card .title-wrapper .inner-wrapper .icon svg path {
+  stroke: #707070;
+}
+.accordin-card .title-wrapper .inner-wrapper .title {
+  color: #1c1a1d;
+}
+.accordin-card .desc {
+  max-width: 480px;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 1;
+}
+.accordin-card .theme-btn {
+  position: relative;
+  z-index: 1;
 }
 
 .award-and-event-area {

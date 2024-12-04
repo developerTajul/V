@@ -321,6 +321,21 @@ input.theme-btn {
       color: $black;
     }
   }
+  &.style-3 {
+    padding: 26px 32px;
+    background-color: $primary-color;
+    .theme-btn-icon {
+      width: auto;
+      height: auto;
+      border-color: transparent;
+      i {
+        font-size: 32px;
+      }
+    }
+    .theme-btn-desc {
+      color: $white;
+    }
+  }
 }
 
 .simple-btn {
