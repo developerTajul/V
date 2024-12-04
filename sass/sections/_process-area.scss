@@ -1,33 +1,97 @@
 .process-area {
-  position: absolute;
-  bottom: 0;
-  right: 0;
   display: flex;
   align-items: center;
-  .process-card {
-    flex: 1;
-    padding: 12px 30px;
+  .process-card-wrapper {
     position: relative;
-    z-index: 3;
-    width: 315px;
-    max-height: 100px;
-    @include transition;
-    &:hover,
-    &.active {
-      background: rgba(255, 255, 255, 0.3);
-      backdrop-filter: blur(5px);
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    .bg-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(28, 26, 29, 0.7);
+        mix-blend-mode: luminosity;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .process-card {
+    max-width: 573px;
+    height: 700px;
+    // height: 100%;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    position: relative;
+    z-index: 1;
+    &:hover {
+      background: rgba(28, 26, 29, 0.1);
+      backdrop-filter: blur(20px);
+      @include transition;
+      .icon {
+        visibility: visible;
+        opacity: 1;
+        @include transition;
+      }
+      .content-wrapper {
+        gap: 35px;
+        @include transition;
+
+        .content-icon {
+          visibility: visible;
+          opacity: 1;
+          height: auto;
+          @include transition;
+        }
+        .desc {
+          visibility: visible;
+          opacity: 1;
+          height: auto;
+          transform: scaleY(1);
+          @include transition;
+        }
+      }
+    }
+    .icon {
+      visibility: hidden;
+      opacity: 0;
       @include transition;
     }
-    @include rmaxwd(1399) {
-      width: auto;
-    }
-    .number {
-      color: $white;
-    }
-    .title {
-      padding-top: 10px;
-      margin-top: 10px;
-      border-top: 1px solid $white;
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      @include transition;
+      .content-icon {
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        @include transition;
+      }
+      .desc {
+        color: $white;
+        margin-bottom: 0;
+        visibility: hidden;
+        opacity: 0;
+        transform: scaleY(0);
+        height: 0;
+        @include transition;
+      }
     }
   }
 }

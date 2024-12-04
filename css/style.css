@@ -22100,47 +22100,136 @@ html {
 }
 
 .process-area {
-  position: absolute;
-  bottom: 0;
-  right: 0;
   display: flex;
   align-items: center;
 }
-.process-area .process-card {
-  flex: 1;
-  padding: 12px 30px;
+.process-area .process-card-wrapper {
   position: relative;
-  z-index: 3;
-  width: 315px;
-  max-height: 100px;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+}
+.process-area .process-card-wrapper .bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.process-area .process-card-wrapper .bg-img:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(28, 26, 29, 0.7);
+  mix-blend-mode: luminosity;
+}
+.process-area .process-card-wrapper .bg-img img {
+  width: 100%;
+  height: 100%;
+}
+.process-area .process-card {
+  max-width: 573px;
+  height: 700px;
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  position: relative;
+  z-index: 1;
+}
+.process-area .process-card:hover {
+  background: rgba(28, 26, 29, 0.1);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
   transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
-.process-area .process-card:hover, .process-area .process-card.active {
-  background: rgba(255, 255, 255, 0.3);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+.process-area .process-card:hover .icon {
+  visibility: visible;
+  opacity: 1;
   transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
-@media (max-width: 1399px) {
-  .process-area .process-card {
-    width: auto;
-  }
+.process-area .process-card:hover .content-wrapper {
+  gap: 35px;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
 }
-.process-area .process-card .number {
+.process-area .process-card:hover .content-wrapper .content-icon {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.process-area .process-card:hover .content-wrapper .desc {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  transform: scaleY(1);
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.process-area .process-card .icon {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.process-area .process-card .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.process-area .process-card .content-wrapper .content-icon {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.process-area .process-card .content-wrapper .desc {
   color: #ffffff;
-}
-.process-area .process-card .title {
-  padding-top: 10px;
-  margin-top: 10px;
-  border-top: 1px solid #ffffff;
+  margin-bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+  transform: scaleY(0);
+  height: 0;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
 }
 
 @media (max-width: 991px) {
