@@ -188,6 +188,47 @@
       line-height: 29px;
     }
   }
+  &.style-2 {
+    ul {
+      li {
+        padding-bottom: 20px;
+        border-bottom: 1px solid $gray;
+        font-family: Cormorant;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        color: $black;
+        padding-left: 0;
+        @include transition;
+        svg {
+          path {
+            fill: $gray;
+            @include transition;
+          }
+        }
+        i {
+          color: $gray;
+          @include transition;
+        }
+        &:hover {
+          border-color: $black;
+          padding-left: 60px;
+          @include transition;
+          svg {
+            path {
+              fill: $black;
+              @include transition;
+            }
+          }
+          i {
+            color: $black;
+            @include transition;
+          }
+        }
+      }
+    }
+  }
 }
 
 .accordin-card {

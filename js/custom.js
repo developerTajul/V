@@ -200,11 +200,12 @@
       loop: true,
       dots: false,
       speed: 5000,
-      rtl: false,
+      rtl: false, 
       responsive: [
         {
           breakpoint: 768,
           settings: {
+            slidesToShow: 2,
             vertical: false,
           },
         },

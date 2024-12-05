@@ -16566,12 +16566,6 @@ html {
   color: #b69974;
   text-transform: uppercase;
 }
-.section-title.style-2 h2 {
-  color: #ffffff;
-}
-.section-title.style-2 .desc {
-  color: #ffffff;
-}
 .section-title.style-2 span {
   color: #edbc5a;
   font-weight: 300;
@@ -21067,7 +21061,21 @@ html {
   line-height: 29px;
 }
 
-.brand-marque-area .brand-marque-wrapper .single-img-marque span {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .brand-marque-area {
+    padding-top: 52px;
+    padding-bottom: 32px;
+  }
+}
+.brand-marque-area .brand-marque-wrapper .single-img-marque {
+  display: flex !important;
+  height: 53px;
+  align-items: center;
+}
+.brand-marque-area.style-2 .brand-marque-wrapper .single-img-marque {
+  height: auto;
+}
+.brand-marque-area.style-2 .brand-marque-wrapper .single-img-marque span {
   font-family: "Cormorant", serif;
   font-size: 200px;
   font-style: normal;
@@ -21910,6 +21918,63 @@ html {
   font-weight: 400;
   line-height: 29px;
 }
+.list-item-wrapper.style-2 ul li {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #c7c9ca;
+  font-family: Cormorant;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #1c1a1d;
+  padding-left: 0;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.list-item-wrapper.style-2 ul li svg path {
+  fill: #c7c9ca;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.list-item-wrapper.style-2 ul li i {
+  color: #c7c9ca;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.list-item-wrapper.style-2 ul li:hover {
+  border-color: #1c1a1d;
+  padding-left: 60px;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.list-item-wrapper.style-2 ul li:hover svg path {
+  fill: #1c1a1d;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.list-item-wrapper.style-2 ul li:hover i {
+  color: #1c1a1d;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
 
 .accordin-card {
   position: relative;
@@ -22266,6 +22331,50 @@ html {
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
+}
+
+.our-work-process .list-item-wrapper {
+  margin-top: 50px;
+}
+.our-work-process .post-video {
+  position: relative;
+  overflow: hidden;
+}
+.our-work-process .post-video img {
+  max-width: 876px;
+  max-height: 585px;
+  mix-blend-mode: luminosity;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.our-work-process .post-video .popup-video-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.our-work-process .post-video .video-btn a {
+  width: 70px;
+  height: 70px;
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  background-color: #ffffff;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.our-work-process .post-video .video-btn a i {
+  color: #b69974;
+  font-size: 18px;
+}
+.our-work-process .post-video .video-btn a:hover {
+  animation: none;
 }
 
 @media (max-width: 991px) {
