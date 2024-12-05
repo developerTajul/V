@@ -22242,7 +22242,7 @@ html {
   position: relative;
   z-index: 1;
 }
-.work-process-area .process-card:hover {
+.work-process-area .process-card:hover, .work-process-area .process-card.active {
   background: rgba(28, 26, 29, 0.1);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
@@ -22252,7 +22252,7 @@ html {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
-.work-process-area .process-card:hover .icon {
+.work-process-area .process-card:hover .icon, .work-process-area .process-card.active .icon {
   visibility: visible;
   opacity: 1;
   transition: all 0.5s ease-out;
@@ -22261,7 +22261,7 @@ html {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
-.work-process-area .process-card:hover .content-wrapper {
+.work-process-area .process-card:hover .content-wrapper, .work-process-area .process-card.active .content-wrapper {
   gap: 35px;
   transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
@@ -22269,7 +22269,7 @@ html {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
-.work-process-area .process-card:hover .content-wrapper .content-icon {
+.work-process-area .process-card:hover .content-wrapper .content-icon, .work-process-area .process-card.active .content-wrapper .content-icon {
   visibility: visible;
   opacity: 1;
   height: auto;
@@ -22279,7 +22279,7 @@ html {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
-.work-process-area .process-card:hover .content-wrapper .desc {
+.work-process-area .process-card:hover .content-wrapper .desc, .work-process-area .process-card.active .content-wrapper .desc {
   visibility: visible;
   opacity: 1;
   height: auto;
