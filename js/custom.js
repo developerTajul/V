@@ -211,7 +211,7 @@
       ],
     });
     $('.marquee-active-two').slick({
-      slidesToShow: 4,
+      slidesToShow: 2,
       speed: 10000,
       autoplay: true,
       autoplaySpeed: 0,

@@ -1,4 +1,37 @@
 .process-area {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  .process-card {
+    flex: 1;
+    padding: 12px 30px;
+    position: relative;
+    z-index: 3;
+    width: 315px;
+    max-height: 100px;
+    @include transition;
+    &:hover,
+    &.active {
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(5px);
+      @include transition;
+    }
+    @include rmaxwd(1399) {
+      width: auto;
+    }
+    .number {
+      color: $white;
+    }
+    .title {
+      padding-top: 10px;
+      margin-top: 10px;
+      border-top: 1px solid $white;
+    }
+  }
+}
+.work-process-area {
   display: flex;
   align-items: center;
   .process-card-wrapper {

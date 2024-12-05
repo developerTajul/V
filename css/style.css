@@ -21067,26 +21067,18 @@ html {
   line-height: 29px;
 }
 
-.brand-marque-area.style-2 {
-  margin-bottom: 0;
-}
-.brand-marque-area.style-2.brand-marque-area-primary {
-  margin-bottom: 0;
-}
-.brand-marque-area.style-2 .brand-marque-wrapper .single-img-marque:nth-child(even) {
-  margin-top: 0;
-}
-.brand-marque-area.brand-marque-area-primary {
-  overflow: hidden;
-  position: relative;
-  z-index: 11;
-}
-.brand-marque-area .brand-marque-wrapper .single-img-marque {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 163px;
-  height: 53px;
+.brand-marque-area .brand-marque-wrapper .single-img-marque span {
+  font-family: "Cormorant", serif;
+  font-size: 200px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+  color: #ffffff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #707070;
+  opacity: 0.6;
 }
 
 .services-area-card-wrapper {
@@ -22100,23 +22092,67 @@ html {
 }
 
 .process-area {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   display: flex;
   align-items: center;
 }
-.process-area .process-card-wrapper {
+.process-area .process-card {
+  flex: 1;
+  padding: 12px 30px;
+  position: relative;
+  z-index: 3;
+  width: 315px;
+  max-height: 100px;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.process-area .process-card:hover, .process-area .process-card.active {
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+@media (max-width: 1399px) {
+  .process-area .process-card {
+    width: auto;
+  }
+}
+.process-area .process-card .number {
+  color: #ffffff;
+}
+.process-area .process-card .title {
+  padding-top: 10px;
+  margin-top: 10px;
+  border-top: 1px solid #ffffff;
+}
+
+.work-process-area {
+  display: flex;
+  align-items: center;
+}
+.work-process-area .process-card-wrapper {
   position: relative;
   margin-top: 60px;
   display: flex;
   align-items: center;
 }
-.process-area .process-card-wrapper .bg-img {
+.work-process-area .process-card-wrapper .bg-img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.process-area .process-card-wrapper .bg-img:before {
+.work-process-area .process-card-wrapper .bg-img:before {
   content: "";
   position: absolute;
   top: 0;
@@ -22126,11 +22162,11 @@ html {
   background: rgba(28, 26, 29, 0.7);
   mix-blend-mode: luminosity;
 }
-.process-area .process-card-wrapper .bg-img img {
+.work-process-area .process-card-wrapper .bg-img img {
   width: 100%;
   height: 100%;
 }
-.process-area .process-card {
+.work-process-area .process-card {
   max-width: 573px;
   height: 700px;
   padding: 45px;
@@ -22141,7 +22177,7 @@ html {
   position: relative;
   z-index: 1;
 }
-.process-area .process-card:hover {
+.work-process-area .process-card:hover {
   background: rgba(28, 26, 29, 0.1);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
@@ -22151,7 +22187,7 @@ html {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
-.process-area .process-card:hover .icon {
+.work-process-area .process-card:hover .icon {
   visibility: visible;
   opacity: 1;
   transition: all 0.5s ease-out;
@@ -22160,7 +22196,7 @@ html {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
-.process-area .process-card:hover .content-wrapper {
+.work-process-area .process-card:hover .content-wrapper {
   gap: 35px;
   transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
@@ -22168,7 +22204,7 @@ html {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
-.process-area .process-card:hover .content-wrapper .content-icon {
+.work-process-area .process-card:hover .content-wrapper .content-icon {
   visibility: visible;
   opacity: 1;
   height: auto;
@@ -22178,7 +22214,7 @@ html {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
-.process-area .process-card:hover .content-wrapper .desc {
+.work-process-area .process-card:hover .content-wrapper .desc {
   visibility: visible;
   opacity: 1;
   height: auto;
@@ -22189,7 +22225,7 @@ html {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
-.process-area .process-card .icon {
+.work-process-area .process-card .icon {
   visibility: hidden;
   opacity: 0;
   transition: all 0.5s ease-out;
@@ -22198,7 +22234,7 @@ html {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
-.process-area .process-card .content-wrapper {
+.work-process-area .process-card .content-wrapper {
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -22208,7 +22244,7 @@ html {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
-.process-area .process-card .content-wrapper .content-icon {
+.work-process-area .process-card .content-wrapper .content-icon {
   visibility: hidden;
   opacity: 0;
   height: 0;
@@ -22218,7 +22254,7 @@ html {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
-.process-area .process-card .content-wrapper .desc {
+.work-process-area .process-card .content-wrapper .desc {
   color: #ffffff;
   margin-bottom: 0;
   visibility: hidden;
