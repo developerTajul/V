@@ -121,4 +121,126 @@
       @include transition;
     }
   }
+  &.style-2 {
+    &:hover {
+      .content-wrapper {
+        .image {
+          .top-shape {
+            background-color: $black;
+            @include transition;
+            &:before,
+            &:after {
+              background-color: $black;
+              @include transition;
+            }
+          }
+        }
+        .socila-link {
+          ul {
+            li {
+              svg {
+                path {
+                  fill: $white;
+                  @include transition;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .icon-wrapper {
+      z-index: 10;
+      .icon {
+        .top-shape {
+          left: -34px;
+          top: 49px;
+          width: 15px;
+        }
+      }
+    }
+    .content-wrapper {
+      padding: 20px;
+      .title {
+        padding-left: 15px;
+      }
+      .desc {
+        padding-left: 15px;
+        margin-top: 5px;
+      }
+      .image-wrapper {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+      }
+      .image {
+        position: relative;
+        z-index: 3;
+        border-radius: 25px;
+        overflow: hidden;
+        max-width: 351px;
+        max-height: 274px;
+        .top-shape {
+          position: absolute;
+          right: -2px;
+          top: 0;
+          width: 76px;
+          height: 127px;
+          z-index: 4;
+          border-bottom-left-radius: 25px;
+          background-color: $background;
+          @include transition;
+          &:before {
+            content: '';
+            position: absolute;
+            width: 73px;
+            height: 50px;
+            left: -50px;
+            top: 50px;
+            background: $background;
+            transform: translateY(-100%) rotate(360deg);
+            z-index: 2;
+            clip-path: path(
+              'M0,0 Q53,-5 51,33 L50,350 Q50,400 0,400 L750,400 Q800,400 800,350 L800,50 Q800,0 750,0 Z'
+            );
+            @include transition;
+          }
+          &:after {
+            content: '';
+            position: absolute;
+            width: 73px;
+            height: 50px;
+            right: -20px;
+            bottom: 0;
+            background: $background;
+            transform: translateY(100%) rotate(360deg);
+            z-index: 2;
+            clip-path: path(
+              'M0,0 Q53,-5 51,33 L50,350 Q50,400 0,400 L750,400 Q800,400 800,350 L800,50 Q800,0 750,0 Z'
+            );
+            @include transition;
+          }
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .socila-link {
+        margin-right: 15px;
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 18px;
+          padding: 0;
+          position: relative;
+          z-index: 10;
+          li {
+            @include transition;
+          }
+        }
+      }
+    }
+  }
 }

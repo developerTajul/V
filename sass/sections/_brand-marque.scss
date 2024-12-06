@@ -32,4 +32,23 @@
       }
     }
   }
+  &.style-3 {
+    .brand-marque-wrapper {
+      .single-img-marque {
+        // display: flex !important;
+        height: auto;
+        span {
+          // display: flex !important;
+          font-family: $heading-font;
+          font-size: 125px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          text-transform: uppercase;
+          text-wrap: nowrap;
+          color: $black;
+        }
+      }
+    }
+  }
 }
