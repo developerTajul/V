@@ -1,209 +1,44 @@
 .footer-area {
-  &-company-logo {
-    @include lg {
-      padding-bottom: 20px;
+  .footer-widget {
+    &-desc {
+      color: $white;
+      font-family: $body-font;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 29px;
     }
-    @include sm {
-      padding-bottom: 15px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    }
-  }
-  &-company-info {
-    .line-1 {
-      height: 443px;
-      width: 1px;
-      border-right: 1px solid rgba(255, 255, 255, 0.15);
-      top: 24px;
-      left: 323px;
-      @include xl {
-        left: 278px;
-        height: 432px;
-      }
-      @include lg {
-        left: 234px;
-        height: 385px;
-      }
-      @include md {
-        display: none;
-        overflow: hidden;
-      }
-      @include sm {
-        display: none;
-        overflow: hidden;
-      }
-    }
-  }
-  &-heading-text {
-    @include md {
-      display: none;
-      overflow: hidden;
-    }
-    @include sm {
-      display: none;
-      overflow: hidden;
-    }
-    h2 {
-      text-transform: uppercase;
-      margin-bottom: 5px;
-      @include xl {
-        font-size: 45px;
-      }
-      @include lg {
-        font-size: 40px;
-      }
-    }
-    h4 {
-      font-family: Gilroy-Light;
-      letter-spacing: 20.72px;
-      text-transform: uppercase;
-      @include xl {
-        font-size: 24px;
-        letter-spacing: 19.72px;
-      }
-      @include lg {
-        font-size: 19px;
-        letter-spacing: 16.72px;
-      }
-    }
-  }
-  &-company-fast-email {
-    @include lg {
-      padding-bottom: 50px;
-    }
-    @include md {
-      display: none;
-      visibility: hidden;
-    }
-    @include sm {
-      display: none;
-      visibility: hidden;
-    }
-    & a {
-      padding: 10px 30px;
-      border-radius: 83px;
-      border: 1px solid rgba(224, 224, 224, 0.15);
-      display: inline-block;
-      @include xl {
-        padding: 10px 20px;
-      }
-      @include lg {
-        padding: 10px 20px;
-        font-size: 12px;
-      }
-    }
-  }
-  hr {
-    width: 1293px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    height: 1px;
-    display: flex;
-    justify-content: center;
-    @include xl {
-      width: 1115px;
-    }
-    @include lg {
-      width: 935px;
-    }
-    @include md {
-      width: 700px;
-    }
-    @include sm {
-      display: none;
-    }
-  }
-  &-social-info {
-    @include lg {
-      padding-bottom: 28px;
-    }
-    @include md {
-      padding: 15px 0;
-    }
-    @include sm {
-      padding: 15px 0;
-    }
-    & .sce-email {
-      @include xl {
-        margin-left: 70px;
-      }
-      @include lg {
-        margin-left: 30px;
-      }
-      @include md {
-        margin-left: 0;
-      }
-      @include sm {
-        margin-left: 0;
-        margin-bottom: 15px;
-      }
-      a {
-        display: inline-block;
-        @include lg {
-          font-size: 12px;
+    &-contact {
+      color: $white;
+      font-family: $body-font;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 40px; /* 250% */
+      margin-top: 40px;
+      .footer-contact {
+        margin-top: 13px;
+        li {
+          span {
+            color: $white;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 40px;
+            text-decoration-line: underline;
+            text-decoration-style: solid;
+            text-decoration-skip-ink: none;
+            text-decoration-thickness: auto;
+            text-underline-offset: auto;
+            text-underline-position: from-font;
+          }
         }
       }
-    }
-    .social-content {
-      a {
-        display: inline-block;
-        font-family: Rubik;
-        font-size: 14px;
-        line-height: normal;
-      }
-    }
-  }
-  &-quick-menu {
-    margin-left: 120px;
-    position: relative;
-    @include xl {
-      margin-left: 70px;
-    }
-    @include lg {
-      margin-left: 0;
-      padding-top: 25px;
-    }
-    @include md {
-      margin-left: 0;
-      padding-top: 75px;
-      display: flex;
-      justify-content: center;
-    }
-    @include sm {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 18px;
-      margin-left: 0;
-      padding-top: 55px;
-      padding-bottom: 15px;
-    }
-    @include xs {
-      flex-direction: column;
     }
   }
   &-quick-menu-one {
     li {
       margin-bottom: 4.5px;
-    }
-  }
-  &-quick-menu-two {
-    @include lg {
-      margin-left: 0;
-      margin-right: 0;
-    }
-    @include md {
-      margin-left: 0;
-      margin-right: 0;
-    }
-    @include sm {
-      margin-left: 20px;
-      margin-right: 50px;
-    }
-    @include rmaxwd(378) {
-      margin-left: 20px;
-      margin-right: 0px;
-    }
-    @include xs {
-      margin: 0 0 0 0;
     }
   }
   &-services {
@@ -213,56 +48,7 @@
       }
     }
   }
-  &-sand-messege {
-    position: absolute;
-    right: 100px;
-    bottom: 0;
-    transform: translateY(25%);
-    // @include xl {
-    //   margin: 38px 0 0 24px;
-    // }
-    // @include lg {
-    //   margin: 38px 0 0 24px;
-    // }
-    @include rmaxwd(1399) {
-      transform: translate(0);
-      right: 0;
-    }
-    @include sm {
-      display: none;
-    }
-    a {
-      display: flex;
-      gap: 10px;
-      width: 146px;
-      height: 146px;
-      justify-content: center;
-      align-items: center;
-      background: $white;
-      text-align: center;
-      border-radius: 50%;
-      padding: 24px;
-      @include lg {
-        // width: 86px;
-        // height: 86px;
-      }
-      h4 {
-        color: $black;
-        text-align: center;
-        font-size: 20px;
-        @include transition;
-        @include lg {
-          font-size: 16px;
-        }
-      }
-      i {
-        color: $black;
-        font-size: 20px;
-        transform: rotate(35deg);
-        @include transition;
-      }
-    }
-  }
+
   &-mail-to {
     .input-wrapper {
       display: flex;
@@ -298,7 +84,43 @@
       }
     }
   }
+  .footer-bottom-area {
+    margin-top: 40px;
+    .footer-bottom-social-media {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      margin-bottom: 25px;
+      li {
+        a {
+          color: $text-color;
+          font-family: $body-font;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 29px;
+          letter-spacing: 1.4px;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
   .footer-copy-right-info {
+    display: inline-flex;
+    padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: $black;
+    font-family: $body-font;
+    color: $white;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px; /* 207.143% */
+    letter-spacing: 1.4px;
+    margin-bottom: 24px;
     @include md {
       // padding: 15px 0;
       border-top: 1px solid rgba(255, 255, 255, 0.15);
@@ -306,23 +128,8 @@
     @include sm {
       width: 100%;
       padding: 15px 0;
-      border-top: 1px solid rgba(255, 255, 255, 0.15);
     }
-    display: inline-flex;
-    padding: 5px 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background-color: $secondary-color;
-    color: $black;
-    font-family: $body-font;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 2.4px;
-    text-transform: uppercase;
-    margin-bottom: 24px;
+
     a {
       color: $black;
     }
