@@ -21197,6 +21197,9 @@ html {
     padding-bottom: 32px;
   }
 }
+.brand-marque-area .title {
+  margin-top: -7px;
+}
 .brand-marque-area .brand-marque-wrapper .single-img-marque {
   display: flex !important;
   height: 53px;
@@ -21795,7 +21798,7 @@ html {
   z-index: 1;
 }
 .services-area.style-2 .inner-wrapper .list-item-wrapper {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -22231,7 +22234,7 @@ html {
 }
 
 .our-work-process .list-item-wrapper {
-  margin-top: 50px;
+  margin-top: 24px;
 }
 .our-work-process .post-video {
   position: relative;
@@ -23736,6 +23739,13 @@ html {
 .footer-area-mail-to .input-wrapper {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.footer-area-mail-to .input-wrapper svg {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translate(-100%, -50%);
 }
 .footer-area-mail-to .input-wrapper label {
   color: #ffffff;
@@ -23758,6 +23768,7 @@ html {
   box-sizing: border-box;
   color: #ffffff;
   font-size: 18px;
+  padding-bottom: 10px;
 }
 @media (max-width: 991px) {
   .footer-area-mail-to .input-wrapper input {
@@ -23767,6 +23778,13 @@ html {
 .footer-area-mail-to .input-wrapper input:focus {
   outline: none;
   border-color: #ffffff;
+}
+.footer-area-mail-to .desc {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 15px;
 }
 .footer-area .footer-bottom-area {
   margin-top: 40px;

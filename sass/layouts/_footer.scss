@@ -53,6 +53,13 @@
     .input-wrapper {
       display: flex;
       flex-direction: column;
+      position: relative;
+      svg {
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translate(-100%, -50%);
+      }
       label {
         color: $white;
         font-family: $body-font;
@@ -74,6 +81,7 @@
         box-sizing: border-box;
         color: $white;
         font-size: 18px;
+        padding-bottom: 10px;
         @include rmaxwd(991) {
           width: auto;
         }
@@ -82,6 +90,13 @@
           border-color: $white;
         }
       }
+    }
+    .desc {
+      font-size: 12px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 15px;
     }
   }
   .footer-bottom-area {
