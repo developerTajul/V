@@ -3,6 +3,7 @@ html {
 }
 .custom-container {
   margin: 0 auto;
+  padding: 0 12px;
   @media (min-width: 576px) {
     max-width: 540px;
   }

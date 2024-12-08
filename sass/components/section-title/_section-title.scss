@@ -1,3 +1,12 @@
+.section-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include rmaxwd(991) {
+    flex-direction: column;
+    align-items: start;
+  }
+}
 .section-title {
   @include md {
     margin-bottom: 30px;
@@ -59,12 +68,6 @@
     }
   }
   &.style-2 {
-    & h2 {
-      // color: $white;
-    }
-    .desc {
-      // color: $white;
-    }
     span {
       color: #edbc5a;
       font-weight: 300;
@@ -124,8 +127,6 @@
         font-size: 18px;
         text-align: center;
       }
-    }
-    &.style-2 {
     }
   }
 }

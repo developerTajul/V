@@ -2,13 +2,18 @@
   margin-top: -140px;
   padding-top: 290px;
   height: 1020px;
-  @include rmaxwd(1399) {
-    padding-top: 0;
+  @include rmaxwd(991) {
+    padding-top: 160px;
+    height: 710px;
   }
 
   &-bg-one {
     top: 0;
     left: 0;
+    @include rmaxwd(991) {
+      height: 100%;
+      object-fit: cover;
+    }
 
     @include xl {
       opacity: 0.3;
@@ -53,7 +58,7 @@
     }
 
     @include sm {
-      font-size: 100px;
+      font-size: 80px;
     }
   }
   &-short-title {
@@ -67,9 +72,9 @@
     color: $white;
     @include sm {
       transform: none;
-      font-size: 14px;
-      transform: translate(5%, 90%);
+      font-size: 48px;
       left: 0;
+      letter-spacing: 10px;
     }
     @include md {
       transform: none;
@@ -324,7 +329,8 @@
 
         &::after {
           content: '';
-          background: url(../../images/shape/h2-hero-star-shape.svg) no-repeat 100% 100%;
+          background: url(../../images/shape/h2-hero-star-shape.svg) no-repeat
+            100% 100%;
           background-size: 100% 100%;
           width: 132px;
           height: 132px;

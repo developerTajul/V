@@ -1,7 +1,4 @@
 .services-area {
-  @include sm {
-    padding-bottom: 32px;
-  }
   @include md {
     padding-bottom: 52px;
   }
@@ -157,9 +154,26 @@
       max-width: 600px;
       max-height: 600px;
       transform: translateY(-50%);
+      @include rmaxwd(1199) {
+        display: none;
+      }
     }
     .section-title {
       margin-top: 115px;
+      @include rmaxwd(991) {
+        margin-top: 60px;
+        margin-bottom: 0;
+      }
+      &-main {
+        @include rmaxwd(991) {
+          color: $black !important;
+        }
+        h2 {
+          @include rmaxwd(991) {
+            color: $black !important;
+          }
+        }
+      }
     }
     .inner-wrapper {
       position: relative;
@@ -167,6 +181,9 @@
       .list-item-wrapper {
         margin-top: 30px;
         margin-bottom: 30px;
+        @include rmaxwd(991) {
+          margin-top: 0;
+        }
       }
     }
   }
@@ -284,6 +301,10 @@
       }
     }
   }
+  @include rmaxwd(991) {
+    flex-direction: column;
+    max-height: 100%;
+  }
   .bg-img {
     position: absolute;
     visibility: hidden;
@@ -306,6 +327,11 @@
     display: flex;
     align-items: center;
     gap: 80px;
+    @include sm {
+      flex-direction: column;
+      gap: 20px;
+      align-items: start;
+    }
     .image-wrapper {
       max-width: 396px;
     }

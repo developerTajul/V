@@ -111,13 +111,23 @@
     border: 1px solid $gray;
     border-radius: 30px;
     @include transition;
+    @include rmaxwd(991) {
+      padding: 30px 20px;
+    }
     .title {
       color: $black;
+      position: relative;
+      z-index: 10;
       @include transition;
+      @include rmaxwd(991) {
+        font-size: 30px;
+      }
     }
     .desc {
       margin-bottom: 0;
       margin-top: 20px;
+      position: relative;
+      z-index: 10;
       @include transition;
     }
   }

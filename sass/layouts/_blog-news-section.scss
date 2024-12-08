@@ -60,6 +60,7 @@
   }
 
   &-card-wrapper {
+    display: none;
     span {
       color: #b0b0b0;
       display: block;
@@ -97,6 +98,9 @@
       max-width: 553px;
       max-height: 608px;
       overflow: hidden;
+      @include rmaxwd(991) {
+        max-width: 350px;
+      }
       &.style-2 {
         max-height: 667px;
       }

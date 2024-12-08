@@ -1,7 +1,7 @@
 .brand-marque-area {
   @include sm {
-    padding-top: 52px;
-    padding-bottom: 32px;
+    padding-top: 30px;
+    padding-bottom: 0;
   }
   .title {
     margin-top: -7px;
@@ -31,6 +31,9 @@
           -webkit-text-stroke-width: 1px;
           -webkit-text-stroke-color: #707070;
           opacity: 0.6;
+          @include sm {
+            font-size: 120px;
+          }
         }
       }
     }
