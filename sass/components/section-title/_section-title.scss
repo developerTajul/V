@@ -8,18 +8,16 @@
   }
 }
 .section-title {
-  @include md {
-    margin-bottom: 30px;
-  }
-  @include sm {
-    margin-bottom: 30px;
-  }
   display: flex;
   gap: 20px;
   flex-direction: column;
   @include sm {
     flex-direction: column;
     gap: 10px;
+  }
+  @include md {
+    margin-bottom: 30px;
+    gap: 0;
   }
   & h2 {
     color: $black;

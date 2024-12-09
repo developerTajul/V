@@ -23,8 +23,10 @@
       slidesToScroll: 1,
       loop: true,
       speed: 1500,
-      prevArrow: '<button class="slick-arrow btn-prev"><i class="fa-solid fa-arrow-right"></i></button>',
-      nextArrow: '<button class="slick-arrow btn-next"><i class="fa-solid fa-arrow-left"></i></button>',
+      prevArrow:
+        '<button class="slick-arrow btn-prev"><i class="fa-solid fa-arrow-right"></i></button>',
+      nextArrow:
+        '<button class="slick-arrow btn-next"><i class="fa-solid fa-arrow-left"></i></button>',
       responsive: [
         {
           breakpoint: 767,
@@ -61,9 +63,12 @@
     $('#total-slides').text(totalSlides);
 
     // Update current slide number after each change
-    $('.testimonial-slider').on('afterChange', function (event, slick, currentSlide) {
-      $('#current-slide').text(currentSlide + 1);
-    });
+    $('.testimonial-slider').on(
+      'afterChange',
+      function (event, slick, currentSlide) {
+        $('#current-slide').text(currentSlide + 1);
+      }
+    );
     $('.testimonial-active-slider').slick({
       slidesToShow: 3,
       centerMode: true,
@@ -101,8 +106,10 @@
       autoplay: true,
       autoplaySpeed: 1500,
       asNavFor: '.testimonial-active-slider',
-      prevArrow: '<button class="slick-arrow btn-prev"><i class="fa-solid fa-caret-right"></i></button>',
-      nextArrow: '<button class="slick-arrow btn-next"><i class="fa-solid fa-caret-left"></i></button>',
+      prevArrow:
+        '<button class="slick-arrow btn-prev"><i class="fa-solid fa-caret-right"></i></button>',
+      nextArrow:
+        '<button class="slick-arrow btn-next"><i class="fa-solid fa-caret-left"></i></button>',
     });
 
     /*==========================
@@ -176,8 +183,10 @@
       dots: false,
       speed: 300,
       rtl: false,
-      prevArrow: "<button type='button' class='post-gallery-btn prev-btn'><i class='fa fa-arrow-left'></i></button>",
-      nextArrow: "<button type='button' class='post-gallery-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
+      prevArrow:
+        "<button type='button' class='post-gallery-btn prev-btn'><i class='fa fa-arrow-left'></i></button>",
+      nextArrow:
+        "<button type='button' class='post-gallery-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
     });
     $('.marquee-active').slick({
       // slidesToShow: 4,
@@ -200,12 +209,19 @@
       loop: true,
       dots: false,
       speed: 5000,
-      rtl: false, 
+      rtl: false,
       responsive: [
         {
           breakpoint: 768,
           settings: {
             slidesToShow: 2,
+            vertical: false,
+          },
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 4,
             vertical: false,
           },
         },
@@ -233,7 +249,7 @@
     /*============================
         Service Details Accordion
         ============================*/
-    document.querySelectorAll('.wuc-accordion-wrapper').forEach((accordion) => {
+    document.querySelectorAll('.wuc-accordion-wrapper').forEach(accordion => {
       const title = accordion.querySelector('.wuc-accordion-title');
       const rightArrow = title?.querySelector('.accordin-icon'); // Optional chaining to handle null
       const content = accordion.querySelector('.wuc-accordion-pra');
@@ -242,7 +258,7 @@
 
       title.addEventListener('click', () => {
         // Remove 'active' class from all accordions
-        document.querySelectorAll('.wuc-accordion-wrapper').forEach((item) => {
+        document.querySelectorAll('.wuc-accordion-wrapper').forEach(item => {
           if (item !== accordion) {
             item.classList.remove('active');
             const itemContent = item.querySelector('.wuc-accordion-pra');
@@ -259,31 +275,35 @@
       });
     });
 
-    document.querySelectorAll('.wuc-accordion-wrapper-two').forEach((accordion) => {
-      const title = accordion.querySelector('.wuc-accordion-title');
-      const rightArrow = title?.querySelector('.accordin-icon'); // Optional chaining to handle null
-      const content = accordion.querySelector('.wuc-accordion-pra');
+    document
+      .querySelectorAll('.wuc-accordion-wrapper-two')
+      .forEach(accordion => {
+        const title = accordion.querySelector('.wuc-accordion-title');
+        const rightArrow = title?.querySelector('.accordin-icon'); // Optional chaining to handle null
+        const content = accordion.querySelector('.wuc-accordion-pra');
 
-      if (!title) return; // Skip this iteration if the title is missing
+        if (!title) return; // Skip this iteration if the title is missing
 
-      title.addEventListener('click', () => {
-        // Remove 'active' class from all accordions
-        document.querySelectorAll('.wuc-accordion-wrapper-two').forEach((item) => {
-          if (item !== accordion) {
-            item.classList.remove('active');
-            const itemContent = item.querySelector('.wuc-accordion-pra');
-            const itemRightArrow = item.querySelector('.accordin-icon');
-            if (itemContent) itemContent.classList.remove('active'); // Check before removing
-            if (itemRightArrow) itemRightArrow.classList.remove('active'); // Check before removing
-          }
+        title.addEventListener('click', () => {
+          // Remove 'active' class from all accordions
+          document
+            .querySelectorAll('.wuc-accordion-wrapper-two')
+            .forEach(item => {
+              if (item !== accordion) {
+                item.classList.remove('active');
+                const itemContent = item.querySelector('.wuc-accordion-pra');
+                const itemRightArrow = item.querySelector('.accordin-icon');
+                if (itemContent) itemContent.classList.remove('active'); // Check before removing
+                if (itemRightArrow) itemRightArrow.classList.remove('active'); // Check before removing
+              }
+            });
+
+          // Toggle 'active' class on the clicked accordion
+          accordion.classList.toggle('active');
+          if (content) content.classList.toggle('active'); // Check before toggling
+          if (rightArrow) rightArrow.classList.toggle('active'); // Check before toggling
         });
-
-        // Toggle 'active' class on the clicked accordion
-        accordion.classList.toggle('active');
-        if (content) content.classList.toggle('active'); // Check before toggling
-        if (rightArrow) rightArrow.classList.toggle('active'); // Check before toggling
       });
-    });
 
     /*============================
         Magnific Popup

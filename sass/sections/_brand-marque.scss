@@ -3,6 +3,18 @@
     padding-top: 30px;
     padding-bottom: 0;
   }
+  @include md {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+  @include lg {
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+  @include xl {
+    padding-top: 120px;
+    padding-bottom: 0;
+  }
   .title {
     margin-top: -7px;
   }

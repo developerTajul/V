@@ -1,5 +1,8 @@
 .icon-card {
   position: relative;
+  @include rmaxwd(991) {
+    margin-top: 12px;
+  }
   &:hover {
     cursor: pointer;
     .icon-wrapper {
@@ -129,6 +132,9 @@
       position: relative;
       z-index: 10;
       @include transition;
+      @include md {
+        max-width: 400px;
+      }
     }
   }
   &.style-2 {

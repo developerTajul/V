@@ -258,6 +258,9 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
+  @include rmaxwd(991) {
+    padding: 12px;
+  }
   &:hover {
     .bg-img {
       visibility: visible;
@@ -312,6 +315,15 @@
     left: 0;
     opacity: 0;
     @include transition;
+    @include rmaxwd(991) {
+      height: 100%;
+    }
+    img {
+      @include rmaxwd(991) {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
     &:before {
       content: '';
       background-color: rgba(28, 26, 29, 0.8);

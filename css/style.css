@@ -16512,20 +16512,16 @@ html {
   gap: 20px;
   flex-direction: column;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .section-title {
-    margin-bottom: 30px;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .section-title {
-    margin-bottom: 30px;
-  }
-}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .section-title {
     flex-direction: column;
     gap: 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-title {
+    margin-bottom: 30px;
+    gap: 0;
   }
 }
 .section-title h2 {
@@ -18914,6 +18910,11 @@ html {
 .icon-card {
   position: relative;
 }
+@media (max-width: 991px) {
+  .icon-card {
+    margin-top: 12px;
+  }
+}
 .icon-card:hover {
   cursor: pointer;
 }
@@ -19087,6 +19088,11 @@ html {
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .icon-card .content-wrapper .desc {
+    max-width: 400px;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .icon-card.style-2 {
@@ -19338,32 +19344,9 @@ html {
   text-transform: uppercase;
   color: #ffffff;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
+@media (max-width: 991px) {
   .hero-area-short-title {
-    transform: none;
     font-size: 48px;
-    left: 0;
-    letter-spacing: 10px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .hero-area-short-title {
-    transform: none;
-    font-size: 16px;
-    transform: translate(25%, 50%);
-    left: 0;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .hero-area-short-title {
-    transform: translate(30%, 25%);
-    left: 0;
-  }
-}
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .hero-area-short-title {
-    transform: translate(30%, 25%);
-    left: 0;
   }
 }
 .hero-area-title-two {
@@ -21036,6 +21019,24 @@ html {
     padding-bottom: 0;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .brand-marque-area {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .brand-marque-area {
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .brand-marque-area {
+    padding-top: 120px;
+    padding-bottom: 0;
+  }
+}
 .brand-marque-area .title {
   margin-top: -7px;
 }
@@ -21757,6 +21758,11 @@ html {
   justify-content: space-between;
   margin-top: 20px;
 }
+@media (max-width: 991px) {
+  .accordin-card {
+    padding: 12px;
+  }
+}
 .accordin-card:hover .bg-img {
   visibility: visible;
   opacity: 1;
@@ -21819,6 +21825,18 @@ html {
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
+}
+@media (max-width: 991px) {
+  .accordin-card .bg-img {
+    height: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .accordin-card .bg-img img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 .accordin-card .bg-img:before {
   content: "";

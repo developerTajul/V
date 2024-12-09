@@ -70,25 +70,14 @@
     letter-spacing: 49.2px;
     text-transform: uppercase;
     color: $white;
-    @include sm {
-      transform: none;
+    @include rmaxwd(991) {
       font-size: 48px;
-      left: 0;
-      letter-spacing: 10px;
     }
     @include md {
-      transform: none;
-      font-size: 16px;
-      transform: translate(25%, 50%);
-      left: 0;
     }
     @include lg {
-      transform: translate(30%, 25%);
-      left: 0;
     }
     @include xl {
-      transform: translate(30%, 25%);
-      left: 0;
     }
   }
 
