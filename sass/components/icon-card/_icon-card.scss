@@ -132,6 +132,9 @@
     }
   }
   &.style-2 {
+    @include sm {
+      margin-top: 12px;
+    }
     &:hover {
       .content-wrapper {
         .image {
@@ -167,12 +170,18 @@
           top: 49px;
           width: 15px;
         }
+        .bottom-shape {
+          width: 40px;
+        }
       }
     }
     .content-wrapper {
       padding: 20px;
       .title {
         padding-left: 15px;
+        @include sm {
+          margin-top: 12px;
+        }
       }
       .desc {
         padding-left: 15px;
@@ -200,6 +209,11 @@
           border-bottom-left-radius: 25px;
           background-color: $background;
           @include transition;
+          @include sm {
+            right: 0;
+            width: 93px;
+            top: -1px;
+          }
           &:before {
             content: '';
             position: absolute;
@@ -220,7 +234,7 @@
             position: absolute;
             width: 73px;
             height: 50px;
-            right: -20px;
+            right: -22px;
             bottom: 0;
             background: $background;
             transform: translateY(100%) rotate(360deg);
@@ -229,6 +243,9 @@
               'M0,0 Q53,-5 51,33 L50,350 Q50,400 0,400 L750,400 Q800,400 800,350 L800,50 Q800,0 750,0 Z'
             );
             @include transition;
+            @include sm {
+              bottom: 1px;
+            }
           }
         }
         img {
@@ -239,6 +256,10 @@
       }
       .socila-link {
         margin-right: 15px;
+        @include sm {
+          margin-right: 0;
+          margin-left: 15px;
+        }
         ul {
           display: flex;
           flex-direction: column;
@@ -246,6 +267,9 @@
           padding: 0;
           position: relative;
           z-index: 10;
+          @include sm {
+            gap: 4px;
+          }
           li {
             @include transition;
           }

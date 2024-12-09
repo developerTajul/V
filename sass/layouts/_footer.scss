@@ -101,11 +101,18 @@
   }
   .footer-bottom-area {
     margin-top: 40px;
+    @include sm {
+      gap: 0;
+      align-items: start;
+    }
     .footer-bottom-social-media {
       display: flex;
       align-items: center;
       gap: 25px;
       margin-bottom: 25px;
+      @include sm {
+        margin-bottom: 0;
+      }
       li {
         a {
           color: $text-color;
@@ -129,7 +136,6 @@
     color: $black;
     font-family: $body-font;
     color: $white;
-    text-align: center;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;

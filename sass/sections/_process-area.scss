@@ -23,6 +23,7 @@
     }
     @include sm {
       padding: 5px;
+      max-height: 130px;
     }
     @include rmaxwd(1399) {
       width: auto;

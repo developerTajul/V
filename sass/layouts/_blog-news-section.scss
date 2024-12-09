@@ -4,6 +4,7 @@
     border-bottom: 1px solid $white;
     @include sm {
       padding-bottom: 10px;
+      padding-top: 25px;
     }
     @include md {
       padding-bottom: 26px;

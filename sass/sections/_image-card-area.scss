@@ -1,6 +1,9 @@
 .follow-us-area {
   display: flex;
   align-items: center;
+  @include sm {
+    flex-direction: column;
+  }
 }
 .image-card-wrapper {
   display: flex;
