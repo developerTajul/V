@@ -18909,6 +18909,7 @@ html {
 
 .icon-card {
   position: relative;
+  margin-top: 30px;
 }
 @media (max-width: 991px) {
   .icon-card {
@@ -19097,6 +19098,11 @@ html {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .icon-card.style-2 {
     margin-top: 12px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .icon-card.style-2 {
+    max-width: 450px;
   }
 }
 .icon-card.style-2:hover .content-wrapper .image .top-shape {
@@ -21045,6 +21051,24 @@ html {
   height: 53px;
   align-items: center;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .brand-marque-area.style-2 {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .brand-marque-area.style-2 {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .brand-marque-area.style-2 {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+}
 .brand-marque-area.style-2 .brand-marque-wrapper .single-img-marque {
   height: auto;
 }
@@ -21064,6 +21088,29 @@ html {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .brand-marque-area.style-2 .brand-marque-wrapper .single-img-marque span {
     font-size: 120px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .brand-marque-area.style-2 .brand-marque-wrapper .single-img-marque span {
+    font-size: 150px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .brand-marque-area.style-3 {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .brand-marque-area.style-3 {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .brand-marque-area.style-3 {
+    padding-top: 60px;
+    padding-bottom: 0;
   }
 }
 .brand-marque-area.style-3 .brand-marque-wrapper .single-img-marque {
@@ -21558,8 +21605,9 @@ html {
   display: flex;
   align-items: center;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
+@media (max-width: 991px) {
   .follow-us-area {
+    gap: 30px;
     flex-direction: column;
   }
 }
@@ -21594,7 +21642,7 @@ html {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .services-area {
-    padding-bottom: 52px;
+    padding-bottom: 80px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -21812,6 +21860,7 @@ html {
   .accordin-card {
     flex-direction: column;
     max-height: 100%;
+    gap: 20px;
   }
 }
 .accordin-card .bg-img {
@@ -21859,6 +21908,12 @@ html {
     align-items: start;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .accordin-card .title-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
 .accordin-card .title-wrapper .image-wrapper {
   max-width: 396px;
 }
@@ -21886,6 +21941,12 @@ html {
 .accordin-card .title-wrapper .inner-wrapper .icon svg path {
   stroke: #707070;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .accordin-card .title-wrapper .inner-wrapper .icon {
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+}
 .accordin-card .title-wrapper .inner-wrapper .title {
   color: #1c1a1d;
 }
@@ -21894,6 +21955,11 @@ html {
   margin-bottom: 0;
   position: relative;
   z-index: 1;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .accordin-card .desc {
+    text-align: center;
+  }
 }
 .accordin-card .theme-btn {
   position: relative;
@@ -22005,6 +22071,7 @@ html {
 }
 .process-area .process-card .number {
   color: #ffffff;
+  margin-bottom: 0;
 }
 .process-area .process-card .title {
   padding-top: 10px;
@@ -22204,9 +22271,14 @@ html {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
-@media (max-width: 991px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .our-work-process .post-video img {
     max-width: 350px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .our-work-process .post-video img {
+    max-width: 100%;
   }
 }
 .our-work-process .post-video .popup-video-wrapper {
@@ -23540,6 +23612,7 @@ html {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .blog-area.style-1 {
+    padding-top: 45px;
     padding-bottom: 26px;
   }
 }

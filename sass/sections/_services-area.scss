@@ -1,6 +1,6 @@
 .services-area {
   @include md {
-    padding-bottom: 52px;
+    padding-bottom: 80px;
   }
   @include lg {
     padding-bottom: 70px;
@@ -307,6 +307,7 @@
   @include rmaxwd(991) {
     flex-direction: column;
     max-height: 100%;
+    gap: 20px;
   }
   .bg-img {
     position: absolute;
@@ -344,6 +345,10 @@
       gap: 20px;
       align-items: start;
     }
+    @include md {
+      flex-direction: column;
+      gap: 40px;
+    }
     .image-wrapper {
       max-width: 396px;
     }
@@ -367,6 +372,10 @@
             stroke: $text-color;
           }
         }
+        @include md {
+          left: 50%;
+          transform: translate(-50%, -100%);
+        }
       }
       .title {
         color: $black;
@@ -378,6 +387,9 @@
     margin-bottom: 0;
     position: relative;
     z-index: 1;
+    @include md {
+      text-align: center;
+    }
   }
   .theme-btn {
     position: relative;

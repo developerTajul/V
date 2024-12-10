@@ -1,7 +1,8 @@
 .follow-us-area {
   display: flex;
   align-items: center;
-  @include sm {
+  @include rmaxwd(991) {
+    gap: 30px;
     flex-direction: column;
   }
 }

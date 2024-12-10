@@ -1,5 +1,6 @@
 .icon-card {
   position: relative;
+  margin-top: 30px;
   @include rmaxwd(991) {
     margin-top: 12px;
   }
@@ -140,6 +141,9 @@
   &.style-2 {
     @include sm {
       margin-top: 12px;
+    }
+    @include md {
+      max-width: 450px;
     }
     &:hover {
       .content-wrapper {

@@ -30,6 +30,7 @@
     }
     .number {
       color: $white;
+      margin-bottom: 0;
     }
     .title {
       padding-top: 10px;
@@ -179,8 +180,11 @@
       max-height: 585px;
       mix-blend-mode: luminosity;
       @include transition;
-      @include rmaxwd(991) {
+      @include sm {
         max-width: 350px;
+      }
+      @include md {
+        max-width: 100%;
       }
     }
 
