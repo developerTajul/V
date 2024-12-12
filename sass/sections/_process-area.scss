@@ -119,6 +119,9 @@
     @include rmaxwd(991) {
       padding: 30px;
     }
+    @include lg {
+      padding: 25px;
+    }
     .icon {
       visibility: hidden;
       opacity: 0;
@@ -139,6 +142,9 @@
         @include rmaxwd(991) {
           font-size: 36px;
         }
+        @include lg {
+          font-size: 33px;
+        }
       }
       .desc {
         color: $white;
@@ -156,6 +162,9 @@
 .our-work-process {
   @include sm {
     padding-top: 30px;
+  }
+  @include lg {
+    padding-top: 58px;
   }
   .section-title {
     @include rmaxwd(991) {

@@ -5,6 +5,10 @@
     gap: 30px;
     flex-direction: column;
   }
+  @include lg {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 .image-card-wrapper {
   display: flex;

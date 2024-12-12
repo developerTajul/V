@@ -57,6 +57,12 @@
       align-items: center;
       justify-content: center;
       @include transition;
+      @include lg {
+        width: 80px;
+        height: 80px;
+        padding: 16px;
+        border-radius: 20px;
+      }
       svg {
         path {
           fill: $text-color;
@@ -118,6 +124,9 @@
     @include rmaxwd(991) {
       padding: 30px 20px;
     }
+    @include lg {
+      padding: 25px;
+    }
     .title {
       color: $black;
       position: relative;
@@ -125,6 +134,10 @@
       @include transition;
       @include rmaxwd(991) {
         font-size: 30px;
+      }
+      @include lg {
+        width: 190px;
+        font-size: 27px;
       }
     }
     .desc {
@@ -270,6 +283,11 @@
           margin-right: 0;
           margin-left: 15px;
         }
+        @include lg {
+          margin-right: 0;
+          margin-bottom: -35px;
+          margin-left: 10px;
+        }
         ul {
           display: flex;
           flex-direction: column;
@@ -279,6 +297,9 @@
           z-index: 10;
           @include sm {
             gap: 4px;
+          }
+          @include lg {
+            gap: 8px;
           }
           li {
             @include transition;

@@ -21,6 +21,8 @@
 
     @include lg {
       opacity: 0.3;
+      height: 100%;
+      object-fit: cover;
     }
   }
 
@@ -73,9 +75,8 @@
     @include rmaxwd(991) {
       font-size: 48px;
     }
-    @include md {
-    }
     @include lg {
+      font-size: 70px;
     }
     @include xl {
     }

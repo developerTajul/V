@@ -85,6 +85,9 @@
         @include rmaxwd(991) {
           width: auto;
         }
+        @include lg {
+          width: 200px;
+        }
         &:focus {
           outline: none;
           border-color: $white;

@@ -10,6 +10,10 @@
       padding-top: 45px;
       padding-bottom: 26px;
     }
+    @include lg {
+      padding-top: 65px;
+      padding-bottom: 96px;
+    }
   }
   // &.style-2 {
   //   &-card-wrapper {
@@ -62,7 +66,7 @@
   }
 
   &-card-wrapper {
-    display: none;
+    // display: none;
     span {
       color: #b0b0b0;
       display: block;
