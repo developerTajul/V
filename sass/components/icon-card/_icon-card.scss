@@ -63,6 +63,12 @@
         padding: 16px;
         border-radius: 20px;
       }
+      @include xl {
+        width: 80px;
+        height: 80px;
+        padding: 16px;
+        border-radius: 20px;
+      }
       svg {
         path {
           fill: $text-color;
@@ -127,6 +133,9 @@
     @include lg {
       padding: 25px;
     }
+    @include xl {
+      padding: 25px;
+    }
     .title {
       color: $black;
       position: relative;
@@ -136,6 +145,10 @@
         font-size: 30px;
       }
       @include lg {
+        width: 190px;
+        font-size: 27px;
+      }
+      @include xl {
         width: 190px;
         font-size: 27px;
       }
@@ -284,6 +297,11 @@
           margin-left: 15px;
         }
         @include lg {
+          margin-right: 0;
+          margin-bottom: -35px;
+          margin-left: 10px;
+        }
+        @include xl {
           margin-right: 0;
           margin-bottom: -35px;
           margin-left: 10px;

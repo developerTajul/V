@@ -122,6 +122,9 @@
     @include lg {
       padding: 25px;
     }
+    @include xl {
+      padding: 30px;
+    }
     .icon {
       visibility: hidden;
       opacity: 0;
@@ -165,6 +168,9 @@
   }
   @include lg {
     padding-top: 58px;
+  }
+  @include xl {
+    padding-top: 78px;
   }
   .section-title {
     @include rmaxwd(991) {
