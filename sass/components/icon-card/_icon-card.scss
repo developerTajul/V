@@ -326,4 +326,49 @@
       }
     }
   }
+  &.style-3 {
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    margin-top: 0;
+    @include transition;
+    &:hover {
+      margin-top: 40px;
+      @include transition;
+      .icon-wrapper {
+        .icon {
+          background-color: transparent;
+        }
+      }
+      .content-wrapper {
+        background-color: transparent;
+      }
+    }
+    .icon-wrapper {
+      position: relative;
+      padding: 0;
+      background-color: transparent;
+      border: none;
+      .icon {
+        padding: 0;
+        border: none;
+        width: auto;
+        height: auto;
+        display: block;
+        .top-shape,
+        .bottom-shape {
+          display: none;
+        }
+      }
+    }
+    .content-wrapper {
+      padding: 0;
+      border: none;
+      margin-top: 20px;
+      .title,
+      .desc {
+        color: $white;
+      }
+    }
+  }
 }

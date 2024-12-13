@@ -19324,6 +19324,57 @@ html {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
+.icon-card.style-3 {
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  margin-top: 0;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.icon-card.style-3:hover {
+  margin-top: 40px;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.icon-card.style-3:hover .icon-wrapper .icon {
+  background-color: transparent;
+}
+.icon-card.style-3:hover .content-wrapper {
+  background-color: transparent;
+}
+.icon-card.style-3 .icon-wrapper {
+  position: relative;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+.icon-card.style-3 .icon-wrapper .icon {
+  padding: 0;
+  border: none;
+  width: auto;
+  height: auto;
+  display: block;
+}
+.icon-card.style-3 .icon-wrapper .icon .top-shape,
+.icon-card.style-3 .icon-wrapper .icon .bottom-shape {
+  display: none;
+}
+.icon-card.style-3 .content-wrapper {
+  padding: 0;
+  border: none;
+  margin-top: 20px;
+}
+.icon-card.style-3 .content-wrapper .title,
+.icon-card.style-3 .content-wrapper .desc {
+  color: #ffffff;
+}
 
 .hero-area {
   margin-top: -140px;
