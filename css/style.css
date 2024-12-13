@@ -21963,7 +21963,7 @@ html {
   -o-transition: all 0.5s ease-out;
 }
 .accordin-card:hover .title-wrapper .inner-wrapper .icon {
-  left: -430px;
+  left: 10px;
   background-color: #b69974;
   transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
@@ -21974,28 +21974,16 @@ html {
 .accordin-card:hover .title-wrapper .inner-wrapper .icon svg path {
   stroke: #ffffff;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .accordin-card:hover .title-wrapper .inner-wrapper .icon {
-    left: 50%;
-    transform: translate(-50%, -188px);
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .accordin-card:hover .title-wrapper .inner-wrapper .icon {
-    left: -220%;
-  }
-}
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .accordin-card:hover .title-wrapper .inner-wrapper .icon {
-    top: 25%;
-    left: -220%;
-  }
-}
 .accordin-card:hover .title-wrapper .inner-wrapper .title {
   color: #ffffff;
 }
 .accordin-card:hover .desc {
   color: #ffffff;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .accordin-card:hover .desc {
+    margin-right: 30px;
+  }
 }
 .accordin-card:hover .theme-btn {
   transform: translateX(-30px) rotate(-10deg);
@@ -22024,6 +22012,8 @@ html {
   top: 10px;
   left: 0;
   opacity: 0;
+  max-height: 142px;
+  overflow: hidden;
   transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
@@ -22055,6 +22045,7 @@ html {
   display: flex;
   align-items: center;
   gap: 80px;
+  position: relative;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .accordin-card .title-wrapper {
@@ -22074,11 +22065,24 @@ html {
     gap: 40px;
   }
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .accordin-card .title-wrapper {
+    gap: 40px;
+  }
+}
 .accordin-card .title-wrapper .image-wrapper {
   max-width: 396px;
 }
-.accordin-card .title-wrapper .inner-wrapper {
-  position: relative;
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .accordin-card .title-wrapper .image-wrapper {
+    max-width: 345px;
+    width: 100%;
+    max-height: 142px;
+  }
+}
+.accordin-card .title-wrapper .image-wrapper img {
+  height: 100%;
+  max-height: 142px;
 }
 .accordin-card .title-wrapper .inner-wrapper .icon {
   width: 78px;
@@ -22090,8 +22094,9 @@ html {
   padding: 14px;
   background-color: #ffffff;
   position: absolute;
-  left: -100px;
-  transform: translate(-17%, -29%);
+  left: 52.5%;
+  top: 50%;
+  transform: translateY(-50%);
   transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
@@ -22100,20 +22105,6 @@ html {
 }
 .accordin-card .title-wrapper .inner-wrapper .icon svg path {
   stroke: #707070;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .accordin-card .title-wrapper .inner-wrapper .icon {
-    left: 50%;
-    transform: translate(-50%, -100%);
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .accordin-card .title-wrapper .inner-wrapper .icon {
-    width: 60px;
-    height: 60px;
-    left: -82px;
-    transform: translate(21%, 8%);
-  }
 }
 .accordin-card .title-wrapper .inner-wrapper .title {
   color: #1c1a1d;
