@@ -189,16 +189,6 @@
         "<button type='button' class='post-gallery-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
     });
     $('.marquee-active').slick({
-      // slidesToShow: 4,
-      // speed: 5000,
-      // autoplay: true,
-      // draggable: true,
-      // arrows: true,
-      // slidesToScroll: 1,
-      // variableWidth: true,
-      // infinite: true,
-      // arrows: false,
-
       slidesToShow: 5,
       infinite: true,
       autoplay: true,
@@ -236,6 +226,25 @@
       variableWidth: true,
       infinite: true,
       arrows: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            vertical: false,
+          },
+        },
+      ],
+    });
+    $('.marquee-active-three').slick({
+      slidesToShow: 2,
+      speed: 10000,
+      autoplay: true,
+      autoplaySpeed: 0,
+      cssEase: 'linear',
+      variableWidth: true,
+      infinite: true,
+      arrows: false,
+      reverse: true,
       responsive: [
         {
           breakpoint: 768,

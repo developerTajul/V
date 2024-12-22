@@ -19328,7 +19328,7 @@ html {
   padding: 0;
   border-radius: 0;
   border: none;
-  margin-top: 0;
+  transform: translateY(0);
   transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
@@ -19336,7 +19336,7 @@ html {
   -o-transition: all 0.5s ease-out;
 }
 .icon-card.style-3:hover {
-  margin-top: 40px;
+  transform: translateY(40px);
   transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
@@ -21240,6 +21240,71 @@ html {
   text-wrap: nowrap;
   color: #1c1a1d;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .brand-marque-area.style-4 {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .brand-marque-area.style-4 {
+    padding-top: 65px;
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .brand-marque-area.style-4 {
+    padding-top: 85px;
+    padding-bottom: 0;
+  }
+}
+.brand-marque-area.style-4 .brand-marque-wrapper .single-img-marque {
+  height: auto;
+}
+.brand-marque-area.style-4 .brand-marque-wrapper .single-img-marque span {
+  font-family: "Cormorant", serif;
+  font-size: 125px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+  color: #ffffff;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .brand-marque-area.style-5 {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .brand-marque-area.style-5 {
+    padding-top: 65px;
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .brand-marque-area.style-5 {
+    padding-top: 85px;
+    padding-bottom: 0;
+  }
+}
+.brand-marque-area.style-5 .brand-marque-wrapper .single-img-marque {
+  height: auto;
+}
+.brand-marque-area.style-5 .brand-marque-wrapper .single-img-marque span {
+  font-family: "Cormorant", serif;
+  text-align: center;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--Typography, #707070);
+  font-family: Cormorant;
+  font-size: 125px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  color: transparent;
+}
 
 .services-area-card-wrapper {
   width: 100%;
@@ -22138,7 +22203,7 @@ html {
   padding: 14px;
   background-color: #ffffff;
   position: absolute;
-  left: 52.5%;
+  left: 300px;
   top: 50%;
   transform: translateY(-50%);
   transition: all 0.5s ease-out;
